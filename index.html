@@ -423,21 +423,18 @@ body.present.idle{cursor:none;}
 
 <div style="display:flex;align-items:center;gap:0;background:var(--off);border-radius:12px;padding:20px 30px;">
 <div style="flex:1;background:#fff;border:2px solid var(--red);border-radius:10px;padding:18px;text-align:center;">
-<div style="font-size:28px;margin-bottom:6px;">🔢</div>
 <div style="font-size:16px;font-weight:900;color:var(--red);">1. VERSION</div>
 <div style="font-size:12px;color:var(--muted);margin-top:4px;font-weight:600;">(Release)</div>
 <div style="font-size:11.5px;color:#555;margin-top:8px;line-height:1.5;">Which release of Odoo are you using? e.g. Odoo 18, 19, 20</div>
 </div>
 <div class="arr" style="font-size:28px;color:var(--red);font-weight:900;padding:0 16px;">→</div>
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:10px;padding:18px;text-align:center;">
-<div style="font-size:28px;margin-bottom:6px;">📦</div>
 <div style="font-size:16px;font-weight:900;color:var(--red);">2. EDITION</div>
 <div style="font-size:12px;color:var(--muted);margin-top:4px;font-weight:600;">(Software Type)</div>
 <div style="font-size:11.5px;color:#555;margin-top:8px;line-height:1.5;">Community (Free) or Enterprise (Paid)?</div>
 </div>
 <div class="arr" style="font-size:28px;color:var(--red);font-weight:900;padding:0 16px;">→</div>
 <div style="flex:1;background:#fff;border:2px solid var(--red);border-radius:10px;padding:18px;text-align:center;">
-<div style="font-size:28px;margin-bottom:6px;">☁️</div>
 <div style="font-size:16px;font-weight:900;color:var(--red);">3. HOSTING</div>
 <div style="font-size:12px;color:var(--muted);margin-top:4px;font-weight:600;">(Deployment)</div>
 <div style="font-size:11.5px;color:#555;margin-top:8px;line-height:1.5;">Where is Odoo running? On-Premise / Odoo Online / Odoo.sh</div>
@@ -445,24 +442,20 @@ body.present.idle{cursor:none;}
 </div>
 <div class="two-col" style="flex:1;">
 <div class="alert purple" style="flex:1;align-items:flex-start;padding:16px;">
-<span class="alert-icon">💡</span>
 <div>
 <strong>Why do these 3 things matter?</strong><br/><br/>
-          Every Odoo setup is defined by these three choices. When a client or manager says <em>"We are on Odoo 20 Enterprise on Odoo.sh"</em> — you now know exactly what that means.<br/><br/>
-          These three answers also determine <strong>which features are available</strong> and <strong>how much it costs.</strong>
+     Every Odoo setup is defined by these three choices. When a client or manager says <em>"We are on Odoo 20 Enterprise on Odoo.sh"</em> — you now know exactly what that means.<br/><br/>
+     These three answers also determine <strong>which features are available</strong> and <strong>how much it costs.</strong>
 </div>
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
 <div class="alert blue">
-<span class="alert-icon">🎯</span>
 <div><strong>Quick Example:</strong><br/>My Laptop → Odoo 20 → Community → On-Premise → <strong>Free!</strong></div>
 </div>
 <div class="alert orange">
-<span class="alert-icon">🎯</span>
 <div><strong>Another Example:</strong><br/>Client's company database → Odoo 20 → Enterprise → Odoo Online → <strong>Paid per user/month</strong></div>
 </div>
 <div class="alert green">
-<span class="alert-icon">📌</span>
 <div>The next slides explain each of these 3 parts in detail. <strong>Make sure you understand each one deeply — they form the foundation of every Odoo implementation.</strong></div>
 </div>
 </div>
@@ -481,7 +474,6 @@ body.present.idle{cursor:none;}
 </ul>
 </div>
 <div class="alert purple">
-<span class="alert-icon">⚠️</span>
 <div><strong>Important:</strong> Moving a company from one version to a newer one (e.g. Odoo 18 → Odoo 20) is an <strong>upgrade</strong> (via upgrade.odoo.com) — it is not automatic and must be tested first.</div>
 </div>
 </div>
@@ -507,26 +499,24 @@ body.present.idle{cursor:none;}
 </ul>
 </div>
 <div class="alert green">
-<span class="alert-icon">💼</span>
 <div><strong>Trainer Note:</strong> When a client asks "Which Odoo version should we use?" → <em>"Start new projects on the latest version (Odoo 20) — it has the longest support ahead. Existing clients should plan an upgrade before their version's support ends."</em></div>
 </div>
 </div>
 </div>
 </div></article><article class="topic" id="ch-01-odoo-fundamentals--odoo-20-what-s-different-for-consultants"><header class="topic-hdr"><span class="topic-num">03</span><div><h3>Odoo 20 — What's Different for Consultants</h3><p class="topic-sub">Changes since Odoo 17 that you will see in Odoo 20 — worth knowing before your first project</p></div></header><div class="topic-body">
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-<div class="card" style="gap:6px;"><div class="card-title">📦 Goods · Service · Combo <span class="pill grey" style="margin-left:4px;">Since 18</span></div><ul class="blist"><li><strong>Goods</strong> replaces "Storable / Consumable" — tick <strong>Track Inventory</strong> to follow stock quantities</li><li><strong>Combo</strong> bundles products sold as one line (e.g. restaurant menus)</li><li><strong>Service</strong> products still drive Tasks, Projects and Timesheets</li></ul></div>
-<div class="card" style="gap:6px;"><div class="card-title">📊 Inventory valuation labels <span class="pill grey" style="margin-left:4px;">Since 19</span></div><ul class="blist"><li><strong>Periodic (at closing)</strong> — the default — and <strong>Perpetual (at invoicing)</strong>; older versions said Manual / Automated</li><li>Costing method <strong>Standard · Average (AVCO) · FIFO</strong>: a company default, overridable per product category</li></ul></div>
-<div class="card" style="gap:6px;"><div class="card-title">🔐 Access rights &amp; record rules <span class="pill red" style="margin-left:4px;">New in 20</span></div><ul class="blist"><li>Record rules are <strong>merged into access rights</strong> — one access right can now carry a filter</li><li>"Who can see what" is now <strong>one setting</strong> instead of two</li><li>Customisations built for older versions <strong>must be upgraded</strong></li></ul></div>
-<div class="card" style="gap:6px;"><div class="card-title">🧾 Chart of accounts <span class="pill red" style="margin-left:4px;">New in 20</span></div><ul class="blist"><li><strong>Account codes are optional</strong> — an account can be set up with just a name</li><li><strong>Parent accounts</strong> replace account groups for building the account hierarchy</li></ul></div>
+<div class="card" style="gap:6px;"><div class="card-title">Goods · Service · Combo <span class="pill grey" style="margin-left:4px;">Since 18</span></div><ul class="blist"><li><strong>Goods</strong> replaces "Storable / Consumable" — tick <strong>Track Inventory</strong> to follow stock quantities</li><li><strong>Combo</strong> bundles products sold as one line (e.g. restaurant menus)</li><li><strong>Service</strong> products still drive Tasks, Projects and Timesheets</li></ul></div>
+<div class="card" style="gap:6px;"><div class="card-title">Inventory valuation labels <span class="pill grey" style="margin-left:4px;">Since 19</span></div><ul class="blist"><li><strong>Periodic (at closing)</strong> — the default — and <strong>Perpetual (at invoicing)</strong>; older versions said Manual / Automated</li><li>Costing method <strong>Standard · Average (AVCO) · FIFO</strong>: a company default, overridable per product category</li></ul></div>
+<div class="card" style="gap:6px;"><div class="card-title">Access rights &amp; record rules <span class="pill red" style="margin-left:4px;">New in 20</span></div><ul class="blist"><li>Record rules are <strong>merged into access rights</strong> — one access right can now carry a filter</li><li>"Who can see what" is now <strong>one setting</strong> instead of two</li><li>Customisations built for older versions <strong>must be upgraded</strong></li></ul></div>
+<div class="card" style="gap:6px;"><div class="card-title">Chart of accounts <span class="pill red" style="margin-left:4px;">New in 20</span></div><ul class="blist"><li><strong>Account codes are optional</strong> — an account can be set up with just a name</li><li><strong>Parent accounts</strong> replace account groups for building the account hierarchy</li></ul></div>
 </div>
-<div class="alert red"><span class="alert-icon">💡</span><div><strong>Trainer note:</strong> Always ask which <em>version</em> the client runs — screens, field names and valuation labels differ between releases, so confirm before you demo or configure.</div></div>
+<div class="alert red"><div><strong>Trainer note:</strong> Always ask which <em>version</em> the client runs — screens, field names and valuation labels differ between releases, so confirm before you demo or configure.</div></div>
 </div></article><article class="topic" id="ch-01-odoo-fundamentals--part-2-edition-software-type"><header class="topic-hdr"><span class="topic-num">04</span><div><h3>Part 2 — Edition (Software Type)</h3><p class="topic-sub">Odoo has 2 editions — Community (Free) and Enterprise (Paid)</p></div></header><div class="topic-body">
 <div class="two-col" style="flex:1;">
 
 <div class="ed-col comm">
-<div class="ed-head"><span style="font-size:20px;">🟢</span><span style="color:var(--red);">A. COMMUNITY — FREE</span></div>
+<div class="ed-head"><span style="color:var(--red);">A. COMMUNITY — FREE</span></div>
 <div class="alert green" style="padding:9px 12px;">
-<span class="alert-icon">✅</span>
 <div style="font-size:11.5px;">Open Source — source code is publicly available. Anyone can use, modify and distribute it.</div>
 </div>
 <div class="card-title green" style="margin-top:2px;">What's Included:</div>
@@ -544,9 +534,8 @@ body.present.idle{cursor:none;}
 </div>
 
 <div class="ed-col ent">
-<div class="ed-head"><span style="font-size:20px;">⭐</span><span style="color:var(--red);">B. ENTERPRISE — PAID</span></div>
+<div class="ed-head"><span style="color:var(--red);">B. ENTERPRISE — PAID</span></div>
 <div class="alert orange" style="padding:9px 12px;">
-<span class="alert-icon">💰</span>
 <div style="font-size:11.5px;">Subscription-based license. Includes all Community features <strong>plus</strong> many advanced modules.</div>
 </div>
 <div class="card-title orange" style="margin-top:2px;">Everything in Community PLUS:</div>
@@ -561,7 +550,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div class="alert blue" style="margin-top:2px;">
-<span class="alert-icon">📌</span>
 <div><strong>Licence:</strong> Community = free, open-source licence (<strong>LGPLv3</strong>). Enterprise = <strong>paid subscription</strong>.<br/><strong>Community works only On-Premise (self-hosted</strong> — your own server or a cloud VM). Enterprise works on all 3 hosting options (On-Premise, Odoo Online, Odoo.sh).</div>
 </div>
 </div></article><article class="topic" id="ch-01-odoo-fundamentals--part-3-hosting-deployment"><header class="topic-hdr"><span class="topic-num">05</span><div><h3>Part 3 — Hosting (Deployment)</h3><p class="topic-sub">Where is Odoo running? — Odoo can be used in 3 ways</p></div></header><div class="topic-body">
@@ -570,7 +558,6 @@ body.present.idle{cursor:none;}
 <div class="host-col a">
 <div class="host-head a">A. On-Premise</div>
 <div class="host-tag">Self Hosted — Full Control</div>
-<div style="font-size:28px;text-align:center;padding:4px 0;">🖥️</div>
 <ul class="blist blue" style="flex:1;">
 <li>You install Odoo on <strong>your own system</strong> (laptop, VPS, AWS, company server)</li>
 <li>You have <strong>full control</strong> over everything</li>
@@ -578,21 +565,20 @@ body.present.idle{cursor:none;}
 <li>You handle backup, security &amp; updates yourself</li>
 </ul>
 <div class="cost-box a">
-<div class="cost-label a">💰 Cost</div>
+<div class="cost-label a">Cost</div>
 <div class="cost-text">
-            Community → <strong>Free</strong> (only server cost)<br/>
-            Enterprise → License fee + server cost
-          </div>
+      Community → <strong>Free</strong> (only server cost)<br/>
+      Enterprise → License fee + server cost
+     </div>
 </div>
 <div style="background:#fff;border-radius:6px;padding:8px 10px;border-left:3px solid var(--red);font-size:11px;color:#555;line-height:1.5;">
 <strong style="color:var(--red);">Example:</strong> You install Odoo 20 Community on your laptop and run on localhost:8069
-        </div>
+    </div>
 </div>
 
 <div class="host-col b">
 <div class="host-head b">B. Odoo Online (SaaS)</div>
 <div class="host-tag">Cloud — No Installation</div>
-<div style="font-size:28px;text-align:center;padding:4px 0;">🌐</div>
 <ul class="blist teal" style="flex:1;">
 <li>Odoo runs on <strong>Odoo's servers</strong></li>
 <li>You only use it <strong>in the browser</strong></li>
@@ -601,21 +587,20 @@ body.present.idle{cursor:none;}
 <li>Odoo manages updates automatically</li>
 </ul>
 <div class="cost-box b">
-<div class="cost-label b">💰 Cost</div>
+<div class="cost-label b">Cost</div>
 <div class="cost-text">
 <strong>Only Enterprise</strong> (Paid subscription)<br/>
-            Per user, per month/year. <strong>One App Free</strong> plan: one app at no cost.
-          </div>
+      Per user, per month/year. <strong>One App Free</strong> plan: one app at no cost.
+     </div>
 </div>
 <div style="background:#fff;border-radius:6px;padding:8px 10px;border-left:3px solid var(--red);font-size:11px;color:#555;line-height:1.5;">
 <strong style="color:var(--red);">Example:</strong> You login at company.odoo.com in your browser — this is Odoo Online (SaaS)
-        </div>
+    </div>
 </div>
 
 <div class="host-col c">
 <div class="host-head c">C. Odoo.sh (Cloud Platform)</div>
 <div class="host-tag">Developer Cloud — Custom Modules</div>
-<div style="font-size:28px;text-align:center;padding:4px 0;">⚙️</div>
 <ul class="blist orange" style="flex:1;">
 <li>Odoo's own <strong>cloud platform</strong></li>
 <li>You can install <strong>custom modules</strong></li>
@@ -624,15 +609,15 @@ body.present.idle{cursor:none;}
 <li><strong>Development, staging &amp; production</strong> branches</li>
 </ul>
 <div class="cost-box c">
-<div class="cost-label c">💰 Cost</div>
+<div class="cost-label c">Cost</div>
 <div class="cost-text">
-            Only Enterprise (Paid)<br/>
-            Enterprise license + Odoo.sh subscription. No free option.
-          </div>
+      Only Enterprise (Paid)<br/>
+      Enterprise license + Odoo.sh subscription. No free option.
+     </div>
 </div>
 <div style="background:#fff;border-radius:6px;padding:8px 10px;border-left:3px solid var(--red);font-size:11px;color:#555;line-height:1.5;">
 <strong style="color:var(--red);">Flow:</strong> Developer Code → GitHub → Odoo.sh: Development → Staging → Production
-        </div>
+    </div>
 </div>
 </div>
 </div></article><article class="topic" id="ch-01-odoo-fundamentals--edition-vs-hosting-what-is-possible"><header class="topic-hdr"><span class="topic-num">06</span><div><h3>Edition vs Hosting — What Is Possible?</h3><p class="topic-sub">Not every edition works with every hosting option — know the rules</p></div></header><div class="topic-body">
@@ -669,7 +654,6 @@ body.present.idle{cursor:none;}
 </tbody>
 </table>
 <div class="alert orange">
-<span class="alert-icon">⚠️</span>
 <div><strong>Key Rule:</strong> Community edition works <strong>only</strong> on On-Premise. Enterprise works on all 3 hosting options. If a client is on Odoo Online or Odoo.sh — they are always on Enterprise (Paid).</div>
 </div>
 <div class="card" style="flex:1;">
@@ -687,7 +671,6 @@ body.present.idle{cursor:none;}
 <div class="card-title red" style="padding-left:10px;border-left:3px solid var(--red);">Real Life Use Cases</div>
 <div style="background:var(--off);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px;flex:1;">
 <div style="background:#fff;border-radius:8px;padding:12px;border-left:4px solid var(--red);display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">🏪</span>
 <div>
 <div style="font-size:12px;font-weight:800;color:var(--red);">Small Business / Shop</div>
 <div style="font-size:11.5px;color:#555;margin-top:3px;line-height:1.5;">Use standard apps, no customization needed</div>
@@ -695,7 +678,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div style="background:#fff;border-radius:8px;padding:12px;border-left:4px solid var(--red);display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">🏭</span>
 <div>
 <div style="font-size:12px;font-weight:800;color:var(--red);">Custom Workflow / Manufacturing</div>
 <div style="font-size:11.5px;color:#555;margin-top:3px;line-height:1.5;">Need custom modules and specific workflows</div>
@@ -703,7 +685,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div style="background:#fff;border-radius:8px;padding:12px;border-left:4px solid var(--red);display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">🏢</span>
 <div>
 <div style="font-size:12px;font-weight:800;color:var(--red);">Full Control / Large Company</div>
 <div style="font-size:11.5px;color:#555;margin-top:3px;line-height:1.5;">Own server, full control, data security requirements</div>
@@ -766,7 +747,6 @@ body.present.idle{cursor:none;}
 </tbody>
 </table>
 <div class="alert red">
-<span class="alert-icon">⚠️</span>
 <div><strong>Check the edition before promising a feature to a client.</strong> A client on Community cannot use anything in the right-hand column — and Odoo Online / Odoo.sh clients are always on Enterprise.</div>
 </div>
 </div></article><article class="topic" id="ch-01-odoo-fundamentals--odoo-project-lifecycle"><header class="topic-hdr"><span class="topic-num">08</span><div><h3>Odoo Project Lifecycle</h3><p class="topic-sub">How an Odoo implementation project flows from start to support — and where each role fits</p></div></header><div class="topic-body">
@@ -844,7 +824,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div class="alert red" style="margin-top:4px;">
-<span class="alert-icon">💡</span>
 <div><strong>At Cybrosys</strong> — you may play multiple roles across different projects. Understanding the full lifecycle makes you effective in any position.</div>
 </div>
 </div>
@@ -854,37 +833,31 @@ body.present.idle{cursor:none;}
 
 <div style="flex:1;display:flex;flex-direction:column;gap:0;align-items:center;justify-content:center;">
 <div style="width:100%;background:#fff;border:2px solid var(--red);border-radius:8px;padding:7px 12px;text-align:center;">
-<div style="font-size:17px;line-height:1;">👤</div>
 <div style="font-size:12px;font-weight:900;color:var(--red);margin-top:2px;">USERS</div>
 <div style="font-size:10.5px;color:var(--muted);">Clients, Employees, Managers</div>
 </div>
 <div style="font-size:15px;color:var(--red);font-weight:900;line-height:1;">↓</div>
 <div style="width:100%;background:#fff;border:2px solid var(--dark);border-radius:8px;padding:7px 12px;text-align:center;">
-<div style="font-size:17px;line-height:1;">🌐</div>
 <div style="font-size:12px;font-weight:900;color:var(--dark);margin-top:2px;">BROWSER</div>
 <div style="font-size:10.5px;color:var(--muted);">Chrome, Firefox — opens Odoo URL</div>
 </div>
 <div style="font-size:15px;color:var(--red);font-weight:900;line-height:1;">↓</div>
 <div style="width:100%;background:#fdf2f2;border:2px solid var(--red);border-radius:8px;padding:7px 12px;text-align:center;">
-<div style="font-size:17px;line-height:1;">🖥️</div>
 <div style="font-size:12px;font-weight:900;color:var(--red);margin-top:2px;">ODOO UI (OWL Framework)</div>
 <div style="font-size:10.5px;color:var(--muted);">Views, Forms, Lists, Kanban — what users see</div>
 </div>
 <div style="font-size:15px;color:var(--red);font-weight:900;line-height:1;">↓</div>
 <div style="width:100%;background:#fff;border:2px solid var(--dark);border-radius:8px;padding:7px 12px;text-align:center;">
-<div style="font-size:17px;line-height:1;">📦</div>
 <div style="font-size:12px;font-weight:900;color:var(--dark);margin-top:2px;">BUSINESS MODULES</div>
 <div style="font-size:10.5px;color:var(--muted);">CRM, Sales, Purchase, Accounting, Inventory…</div>
 </div>
 <div style="font-size:15px;color:var(--red);font-weight:900;line-height:1;">↓</div>
 <div style="width:100%;background:#fdf2f2;border:2px solid var(--red);border-radius:8px;padding:7px 12px;text-align:center;">
-<div style="font-size:17px;line-height:1;">🐍</div>
 <div style="font-size:12px;font-weight:900;color:var(--red);margin-top:2px;">PYTHON BACKEND</div>
 <div style="font-size:10.5px;color:var(--muted);">Business logic — Odoo 20 needs Python 3.12+</div>
 </div>
 <div style="font-size:15px;color:var(--red);font-weight:900;line-height:1;">↓</div>
 <div style="width:100%;background:var(--dark);border-radius:8px;padding:7px 12px;text-align:center;">
-<div style="font-size:17px;line-height:1;">🐘</div>
 <div style="font-size:12px;font-weight:900;color:#fff;margin-top:2px;">POSTGRESQL DATABASE</div>
 <div style="font-size:10.5px;color:rgba(255,255,255,.6);">All data — products, invoices, orders (PostgreSQL 16+)</div>
 </div>
@@ -911,7 +884,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div class="alert red" style="margin-top:0;">
-<span class="alert-icon">💡</span>
 <div><strong>Key insight:</strong> Functional consultants usually don't touch Python or the database directly. Developers rarely handle client business requirements. Knowing your layer keeps projects clean.</div>
 </div>
 </div>
@@ -921,7 +893,6 @@ body.present.idle{cursor:none;}
 
 <div style="flex:1;display:flex;flex-direction:column;">
 <div style="background:var(--red);border-radius:10px 10px 0 0;padding:12px 16px;display:flex;align-items:center;gap:10px;">
-<div style="font-size:22px;">⚙️</div>
 <div>
 <div style="font-size:16px;font-weight:900;color:#fff;">CONFIGURATION</div>
 <div style="font-size:12px;color:rgba(255,255,255,.75);margin-top:2px;">No coding — Odoo's built-in settings</div>
@@ -929,23 +900,17 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--off);border-radius:0 0 10px 10px;padding:14px;flex:1;display:flex;flex-direction:column;gap:7px;">
 <div style="font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Examples:</div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);">
-<span style="font-size:15px;">👤</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Users &amp; Access Rights</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Users &amp; Access Rights</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);">
-<span style="font-size:15px;">📦</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Products, Pricelists, Taxes</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Products, Pricelists, Taxes</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);">
-<span style="font-size:15px;">🛣️</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Routes &amp; Reordering Rules</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Routes &amp; Reordering Rules</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);">
-<span style="font-size:15px;">📋</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Workflows &amp; Stages</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Workflows &amp; Stages</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);">
-<span style="font-size:15px;">🏢</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Company, Warehouses, Chart of Accounts</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Company, Warehouses, Chart of Accounts</span>
 </div>
 <div class="alert red" style="margin-top:auto;">
-<span class="alert-icon">✅</span>
 <div>Done by <strong>Functional Consultants</strong>. Fast, reversible, no deployment needed.</div>
 </div>
 </div>
@@ -953,7 +918,6 @@ body.present.idle{cursor:none;}
 
 <div style="flex:1;display:flex;flex-direction:column;">
 <div style="background:var(--red2);border-radius:10px 10px 0 0;padding:12px 16px;display:flex;align-items:center;gap:10px;">
-<div style="font-size:22px;">🎨</div>
 <div>
 <div style="font-size:16px;font-weight:900;color:#fff;">STUDIO</div>
 <div style="font-size:12px;color:rgba(255,255,255,.75);margin-top:2px;">No-code customization · Enterprise only</div>
@@ -961,23 +925,17 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--off);border-radius:0 0 10px 10px;padding:14px;flex:1;display:flex;flex-direction:column;gap:7px;">
 <div style="font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Examples:</div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);">
-<span style="font-size:15px;">➕</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Add new fields to a form</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Add new fields to a form</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);">
-<span style="font-size:15px;">🖼️</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Rearrange forms, lists &amp; views</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Rearrange forms, lists &amp; views</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);">
-<span style="font-size:15px;">🧾</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Edit PDF reports (quotes, invoices)</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Edit PDF reports (quotes, invoices)</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);">
-<span style="font-size:15px;">⚡</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Automation rules</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Automation rules</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);">
-<span style="font-size:15px;">🧩</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Simple new apps &amp; menus</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--red2);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Simple new apps &amp; menus</span>
 </div>
 <div class="alert red" style="margin-top:auto;">
-<span class="alert-icon">🎯</span>
 <div>Done by <strong>Functional Consultants</strong> in the browser. Test on a copy of the database first.</div>
 </div>
 </div>
@@ -985,7 +943,6 @@ body.present.idle{cursor:none;}
 
 <div style="flex:1;display:flex;flex-direction:column;">
 <div style="background:var(--dark);border-radius:10px 10px 0 0;padding:12px 16px;display:flex;align-items:center;gap:10px;">
-<div style="font-size:22px;">🔧</div>
 <div>
 <div style="font-size:16px;font-weight:900;color:#fff;">CUSTOM DEVELOPMENT</div>
 <div style="font-size:12px;color:rgba(255,255,255,.6);margin-top:2px;">Requires coding — extends Odoo</div>
@@ -993,20 +950,15 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--off);border-radius:0 0 10px 10px;padding:14px;flex:1;display:flex;flex-direction:column;gap:7px;">
 <div style="font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Examples:</div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);">
-<span style="font-size:15px;">🐍</span><span style="font-size:13px;color:var(--dark);font-weight:600;">New business logic &amp; calculations</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);"><span style="font-size:13px;color:var(--dark);font-weight:600;">New business logic &amp; calculations</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);">
-<span style="font-size:15px;">🔗</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Integrations with other systems</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Integrations with other systems</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);">
-<span style="font-size:15px;">⚛️</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Interactive screens &amp; widgets</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Interactive screens &amp; widgets</span>
 </div>
-<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);">
-<span style="font-size:15px;">📦</span><span style="font-size:13px;color:var(--dark);font-weight:600;">Custom modules — full new features</span>
+<div style="display:flex;align-items:center;gap:8px;background:#fff;border-radius:7px;padding:8px 11px;border-left:3px solid var(--dark);"><span style="font-size:13px;color:var(--dark);font-weight:600;">Custom modules — full new features</span>
 </div>
 <div class="alert blue" style="margin-top:auto;">
-<span class="alert-icon">⚠️</span>
 <div>Done by <strong>Developers</strong>. Needs testing and deployment. Harder to upgrade between versions.</div>
 </div>
 </div>
@@ -1180,8 +1132,8 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--dark);color:#fff;border-radius:10px;padding:14px 20px;text-align:center;">
 <strong style="font-size:16px;">Assets = Liabilities + Equity</strong>
-        |  
-      <span style="font-size:13px;opacity:.8;">Example: Assets $100,000 = Liabilities $40,000 + Equity $60,000</span>
+     |  
+   <span style="font-size:13px;opacity:.8;">Example: Assets $100,000 = Liabilities $40,000 + Equity $60,000</span>
 </div>
 </div></article><article class="topic" id="ch-02-accounting-basics--income-expenses"><header class="topic-hdr"><span class="topic-num">16</span><div><h3>Income &amp; Expenses</h3><p class="topic-sub">What drives profit and loss in Odoo</p></div></header><div class="topic-body">
 <div class="two-col" style="margin-bottom:16px;">
@@ -1206,8 +1158,8 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--red);color:#fff;border-radius:10px;padding:14px 20px;text-align:center;">
 <strong style="font-size:16px;">Net Profit = Income − Expenses</strong>
-        |  
-      <span style="font-size:13px;opacity:.85;">Shown in the Profit &amp; Loss report in Odoo Accounting</span>
+     |  
+   <span style="font-size:13px;opacity:.85;">Shown in the Profit &amp; Loss report in Odoo Accounting</span>
 </div>
 </div></article><article class="topic" id="ch-02-accounting-basics--debit-credit"><header class="topic-hdr"><span class="topic-num">17</span><div><h3>Debit &amp; Credit</h3><p class="topic-sub">The golden rule — every transaction has two sides</p></div></header><div class="topic-body">
 <table class="matrix" style="width:100%;margin-bottom:16px;">
@@ -1222,8 +1174,8 @@ body.present.idle{cursor:none;}
 </table>
 <div style="background:var(--dark);color:#fff;border-radius:10px;padding:14px 20px;text-align:center;">
 <strong style="font-size:15px;">Memory Tip — DEALER</strong>:  
-      <span style="color:#f87171;">D</span>ividends, <span style="color:#f87171;">E</span>xpenses, <span style="color:#f87171;">A</span>ssets are Debit-normal  | 
-      <span style="color:#86efac;">L</span>iabilities, <span style="color:#86efac;">E</span>quity, <span style="color:#86efac;">R</span>evenue are Credit-normal<br/>
+   <span style="color:#f87171;">D</span>ividends, <span style="color:#f87171;">E</span>xpenses, <span style="color:#f87171;">A</span>ssets are Debit-normal  | 
+   <span style="color:#86efac;">L</span>iabilities, <span style="color:#86efac;">E</span>quity, <span style="color:#86efac;">R</span>evenue are Credit-normal<br/>
 <span style="font-size:12px;opacity:.75;">Dividends = profit paid out to the owners. It reduces equity, so it sits on the debit side.</span>
 </div>
 </div></article><article class="topic" id="ch-02-accounting-basics--journal-entry-examples"><header class="topic-hdr"><span class="topic-num">18</span><div><h3>Journal Entry Examples</h3><p class="topic-sub">How common business events look in double-entry accounting</p></div></header><div class="topic-body">
@@ -1248,39 +1200,32 @@ body.present.idle{cursor:none;}
 <div class="acct-entry"><span class="acct-dr">Dr: Accounts Payable  5,000</span>   |   <span class="acct-cr">Cr: Cash / Bank  5,000</span></div>
 </div>
 <div class="alert red" style="margin-top:2px;">
-<span class="alert-icon">💡</span>
 <div><strong>Rule:</strong> Every entry has equal Debit and Credit (example 2: 1,100 = 1,000 + 100). The tax collected is owed to the government, so it is a liability.</div>
 </div>
 </div></article></section>
 <section class="chapter" id="ch-03-odoo-accounting" data-chapter="3"><div class="banner"><div class="banner-kicker">Chapter 03</div><h2>Odoo Accounting</h2><p class="banner-sub">Chart of Accounts · Journals · Invoices · Payments · Reconciliation</p><ul class="banner-chips"><li>CoA Setup</li><li>Journals</li><li>Reconciliation</li></ul></div><article class="topic" id="ch-03-odoo-accounting--odoo-accounting-objects-explained"><header class="topic-hdr"><span class="topic-num">19</span><div><h3>Odoo Accounting Objects Explained</h3><p class="topic-sub">The six core objects you will work with every day in Odoo Accounting</p></div></header><div class="topic-body">
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;flex:1;">
 <div style="background:#fff;border:2px solid var(--red);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;">
-<div style="font-size:22px;">📊</div>
 <div style="font-size:14px;font-weight:900;color:var(--red);">Account</div>
 <div style="font-size:13px;color:#444;line-height:1.55;">A ledger bucket that collects related transactions, e.g. "Bank", "Sales Revenue". It has a name and a type; a code (e.g. 101000) is optional. Every transaction hits at least two accounts (Dr &amp; Cr).</div>
 </div>
 <div style="background:#fff;border:2px solid var(--dark);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;">
-<div style="font-size:22px;">📔</div>
 <div style="font-size:14px;font-weight:900;color:var(--dark);">Journal</div>
 <div style="font-size:13px;color:#444;line-height:1.55;">A book that groups related entries. Journal types: <strong>Sales</strong>, <strong>Purchase</strong>, <strong>Cash</strong>, <strong>Bank</strong>, <strong>Credit Card</strong>, <strong>Miscellaneous</strong>. Each invoice posts to its journal.</div>
 </div>
 <div style="background:#fff;border:2px solid var(--red);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;">
-<div style="font-size:22px;">📝</div>
 <div style="font-size:14px;font-weight:900;color:var(--red);">Journal Entry</div>
 <div style="font-size:13px;color:#444;line-height:1.55;">The actual accounting record — a set of Dr/Cr lines that always balance to zero. Created automatically when you post an invoice, bill, or payment.</div>
 </div>
 <div style="background:var(--red);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;">
-<div style="font-size:22px;">🧾</div>
 <div style="font-size:14px;font-weight:900;color:#fff;">Invoice (Customer)</div>
 <div style="font-size:13px;color:rgba(255,255,255,.85);line-height:1.55;">Bill you send to a customer for goods/services delivered. When posted: Dr Accounts Receivable, Cr Sales Revenue (and Cr Tax Payable for the tax).</div>
 </div>
 <div style="background:var(--dark);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;">
-<div style="font-size:22px;">📄</div>
 <div style="font-size:14px;font-weight:900;color:#fff;">Vendor Bill</div>
 <div style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.55;">Bill received from a supplier. When posted: Dr Expense/Stock, Cr Accounts Payable. Matches the Purchase Order.</div>
 </div>
 <div style="background:#fff;border:2px solid var(--red);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;">
-<div style="font-size:22px;">💳</div>
 <div style="font-size:14px;font-weight:900;color:var(--red);">Payment</div>
 <div style="font-size:13px;color:#444;line-height:1.55;">Records money received (customer) or sent (vendor) and is linked to the open invoice/bill. It goes first to an "outstanding" account and reaches Bank when matched to the bank statement (see Invoice &amp; Bill Flow).</div>
 </div>
@@ -1289,14 +1234,14 @@ body.present.idle{cursor:none;}
 <div class="three-col" style="gap:10px;">
 
 <div style="flex:1;display:flex;flex-direction:column;gap:6px;">
-<div style="background:var(--red);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">🏦 Assets</div>
+<div style="background:var(--red);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">Assets</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Receivable (what customers owe)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Bank and Cash</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Current Assets (Stock…)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Prepayments (paid in advance)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Fixed Assets (Equipment, Vehicles…)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Non-current Assets (long-term)</div>
-<div style="margin-top:4px;background:var(--dark);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">📋 Liabilities</div>
+<div style="margin-top:4px;background:var(--dark);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">Liabilities</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--dark);font-size:14.5px;color:var(--dark);font-weight:600;">Payable (what we owe vendors)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--dark);font-size:14.5px;color:var(--dark);font-weight:600;">Credit Card</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--dark);font-size:14.5px;color:var(--dark);font-weight:600;">Current Liabilities (Tax Payable…)</div>
@@ -1304,14 +1249,14 @@ body.present.idle{cursor:none;}
 </div>
 
 <div style="flex:1;display:flex;flex-direction:column;gap:6px;">
-<div style="background:var(--red);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">🏛️ Equity</div>
+<div style="background:var(--red);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">Equity</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Equity (Owner's Capital)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Retained Earnings (past profits)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Current Year Earnings</div>
-<div style="margin-top:4px;background:var(--dark);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">💵 Income</div>
+<div style="margin-top:4px;background:var(--dark);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">Income</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--dark);font-size:14.5px;color:var(--dark);font-weight:600;">Income (Product Sales)</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--dark);font-size:14.5px;color:var(--dark);font-weight:600;">Other Income (Interest, Fees…)</div>
-<div style="margin-top:4px;background:var(--red);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">💸 Expenses</div>
+<div style="margin-top:4px;background:var(--red);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.5px;">Expenses</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Expenses · Other Expenses</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Depreciation</div>
 <div style="background:#fff;border-radius:7px;padding:8px 12px;border-left:3px solid var(--red);font-size:14.5px;color:var(--dark);font-weight:600;">Cost of Revenue (COGS)</div>
@@ -1327,7 +1272,6 @@ body.present.idle{cursor:none;}
 <div style="font-size:14px;color:#444;line-height:1.6;"><strong>Localization:</strong> Odoo installs the chart of accounts for the company's country — add or adjust accounts to fit the client.</div>
 </div>
 <div class="alert red">
-<span class="alert-icon">📌</span>
 <div style="font-size:13.5px;"><strong>Where to find it in Odoo:</strong> Accounting → Configuration → Chart of Accounts. You can create, modify, or archive accounts here.</div>
 </div>
 </div>
@@ -1414,7 +1358,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div class="alert red" style="font-size:12.5px;line-height:1.5;padding:8px 14px;">
-<span class="alert-icon">💡</span>
 <div><strong>Stocked goods (Perpetual valuation):</strong> posting the customer invoice also books Dr COGS / Cr Stock Valuation — see "Inventory &amp; Accounting". <strong>Community Invoicing</strong> (no bank reconciliation): registering the payment makes the invoice Paid straight away.</div>
 </div>
 </div></article><article class="topic" id="ch-03-odoo-accounting--payments-reconciliation"><header class="topic-hdr"><span class="topic-num">23</span><div><h3>Payments &amp; Reconciliation</h3><p class="topic-sub">Closing the loop between bank and books<span class="edb">Bank reconciliation: Enterprise</span></p></div></header><div class="topic-body">
@@ -1467,7 +1410,7 @@ body.present.idle{cursor:none;}
 <strong>Standard</strong> — a fixed cost you set on the product<br/>
 <strong>AVCO</strong> (average cost) — running average of all purchase prices<br/>
 <strong>FIFO</strong> (first in, first out) — the oldest units' cost is used first
-          </div>
+     </div>
 </div>
 </div>
 
@@ -1491,16 +1434,15 @@ body.present.idle{cursor:none;}
 <div style="font-size:12px;font-weight:800;color:var(--dark);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px;">Two accounting traditions</div>
 <strong>Anglo-Saxon</strong> — the cost of goods is recognised when the <strong>customer invoice</strong> is posted (shown here)<br/>
 <strong>Continental</strong> — the cost is recognised when the <strong>vendor bill</strong> is posted (see the Accounting Standards section)
-          </div>
+     </div>
 </div>
 </div>
 </div>
 <div class="alert red">
-<span class="alert-icon">💡</span>
 <div><strong>This only works with Goods that have "Track Inventory" enabled.</strong> Services and untracked goods carry no inventory value. Always check the category's valuation (Periodic / Perpetual) and costing method when setting up a client.</div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-04-invoicing-module" data-chapter="4"><div class="banner"><div class="banner-kicker">Chapter 04</div><h2>Odoo Invoicing Module</h2><p class="banner-sub">Workflow — Invoice Creation to Payment</p><p class="banner-desc">The Invoicing module helps to create, manage and track customer invoices efficiently and get payments on time.</p><ul class="banner-chips"><li>📋 9-Stage Workflow</li><li>📊 Draft → Posted → In Payment → Paid</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-04-invoicing-module--odoo-invoicing-module-workflow"><header class="topic-hdr"><span class="topic-num">25</span><div><h3>Odoo Invoicing Module: Workflow</h3><p class="topic-sub">Sales to Invoice — 9-stage workflow from Sales Order to final Payment</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-04-invoicing-module" data-chapter="4"><div class="banner"><div class="banner-kicker">Chapter 04</div><h2>Odoo Invoicing Module</h2><p class="banner-sub">Workflow — Invoice Creation to Payment</p><p class="banner-desc">The Invoicing module helps to create, manage and track customer invoices efficiently and get payments on time.</p><ul class="banner-chips"><li>9-Stage Workflow</li><li>Draft → Posted → In Payment → Paid</li><li>Benefits</li></ul></div><article class="topic" id="ch-04-invoicing-module--odoo-invoicing-module-workflow"><header class="topic-hdr"><span class="topic-num">25</span><div><h3>Odoo Invoicing Module: Workflow</h3><p class="topic-sub">Sales to Invoice — 9-stage workflow from Sales Order to final Payment</p></div></header><div class="topic-body">
 
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 11px;">
@@ -1574,11 +1516,11 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Key Points</div>
 <div style="display:flex;flex-direction:column;gap:9px;">
 <div style="background:var(--off);border-left:4px solid var(--red);border-radius:8px;padding:16px 18px;">
-<div style="font-size:14px;font-weight:800;color:var(--dark);margin-bottom:5px;">📄 Multiple Ways to Create an Invoice</div>
+<div style="font-size:14px;font-weight:800;color:var(--dark);margin-bottom:5px;">Multiple Ways to Create an Invoice</div>
 <div style="font-size:13px;color:#555;line-height:1.6;">From the <strong>Sales Order</strong> (Create Invoice, or many orders at once) or <strong>directly</strong>: Customers → Invoices → New.</div>
 </div>
 <div style="background:var(--off);border-left:4px solid var(--red);border-radius:8px;padding:16px 18px;">
-<div style="font-size:14px;font-weight:800;color:var(--dark);margin-bottom:8px;">📊 Invoice Status Flow</div>
+<div style="font-size:14px;font-weight:800;color:var(--dark);margin-bottom:8px;">Invoice Status Flow</div>
 <div style="display:flex;align-items:center;gap:6px;">
 <div style="background:var(--dark);border-radius:6px;padding:7px 12px;font-size:13px;font-weight:800;color:#fff;white-space:nowrap;">Draft</div>
 <div class="arr" style="font-size:18px;color:var(--red);font-weight:900;">→</div>
@@ -1591,7 +1533,7 @@ body.present.idle{cursor:none;}
 <div style="font-size:12px;color:#555;line-height:1.5;margin-top:7px;">Two fields: <strong>Status</strong> (Draft / Posted / Cancelled) and <strong>Payment Status</strong> (Not Paid / Partially Paid / In Payment / Paid).</div>
 </div>
 <div style="background:var(--off);border-left:4px solid var(--red);border-radius:8px;padding:16px 18px;">
-<div style="font-size:14px;font-weight:800;color:var(--dark);margin-bottom:5px;">📧 Email &amp; Payment Tracking</div>
+<div style="font-size:14px;font-weight:800;color:var(--dark);margin-bottom:5px;">Email &amp; Payment Tracking</div>
 <div style="font-size:13px;color:#555;line-height:1.6;">Send invoice by email and track payment status directly from Odoo.</div>
 </div>
 </div>
@@ -1601,25 +1543,22 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits</div>
 <div style="display:flex;flex-direction:column;gap:9px;">
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start;">
-<span style="font-size:24px;">🧾</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Easy Invoice Creation &amp; Management</div><div style="font-size:13px;color:var(--muted);margin-top:3px;line-height:1.55;">Create professional invoices in seconds directly from Sales Orders</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start;">
-<span style="font-size:24px;">💳</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Track Payments &amp; Follow-ups</div><div style="font-size:13px;color:var(--muted);margin-top:3px;line-height:1.55;">Know exactly which invoices are paid, pending or overdue at any time</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start;">
-<span style="font-size:24px;">📈</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Real-time Reporting &amp; Better Cash Flow</div><div style="font-size:13px;color:var(--muted);margin-top:3px;line-height:1.55;">Partner ledger, aged receivables and sales analysis always up to date</div></div>
 </div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:14px 18px;font-size:13.5px;color:#333;line-height:1.65;margin-top:auto;">
-<strong style="color:var(--red);">📌 Remember:</strong> The Invoicing module connects directly with Sales, Purchase and Accounting — payments are registered on the invoice or matched from bank feeds. 😊
-        </div>
+<strong style="color:var(--red);">Remember:</strong> The Invoicing module connects directly with Sales, Purchase and Accounting — payments are registered on the invoice or matched from bank feeds. 
+    </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-05-accounting-module" data-chapter="5"><div class="banner"><div class="banner-kicker">Chapter 05</div><h2>Odoo Accounting Module</h2><p class="banner-sub">Workflow — Setup to Compliance</p><p class="banner-desc">Odoo Accounting helps businesses manage their complete financial cycle — from initial setup to transactions, reporting, analysis and statutory compliance.</p><ul class="banner-chips"><li>📋 7-Stage Workflow</li><li>🔁 Feedback Loop</li><li>✅ Key Benefits</li></ul></div><article class="topic" id="ch-05-accounting-module--odoo-accounting-module-workflow"><header class="topic-hdr"><span class="topic-num">27</span><div><h3>Odoo Accounting Module: Workflow</h3><p class="topic-sub">7-stage financial cycle with Feedback Loop back to Setup</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-05-accounting-module" data-chapter="5"><div class="banner"><div class="banner-kicker">Chapter 05</div><h2>Odoo Accounting Module</h2><p class="banner-sub">Workflow — Setup to Compliance</p><p class="banner-desc">Odoo Accounting helps businesses manage their complete financial cycle — from initial setup to transactions, reporting, analysis and statutory compliance.</p><ul class="banner-chips"><li>7-Stage Workflow</li><li>Feedback Loop</li><li>Key Benefits</li></ul></div><article class="topic" id="ch-05-accounting-module--odoo-accounting-module-workflow"><header class="topic-hdr"><span class="topic-num">27</span><div><h3>Odoo Accounting Module: Workflow</h3><p class="topic-sub">7-stage financial cycle with Feedback Loop back to Setup</p></div></header><div class="topic-body">
 
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:12px 13px;position:relative;">
@@ -1681,8 +1620,8 @@ body.present.idle{cursor:none;}
 <div style="background:var(--red);border-radius:6px;padding:5px 12px;font-size:11.5px;font-weight:800;color:#fff;white-space:nowrap;">Revisit Setup</div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 16px;font-size:12.5px;color:#333;line-height:1.6;">
-<strong style="color:var(--red);">🔁 Year-end → next period:</strong> There is no "close / open fiscal year" step. The year's result <strong>carries forward automatically</strong>; you close a period with <strong>lock dates</strong>, plus an optional entry allocating the year's earnings. Insights from tax reports and audits feed back into Setup (new tax rates, new journals) — accounting is a <strong>continuous cycle</strong>.<br/><br/><strong style="color:var(--red);">Edition note:</strong> asset depreciation, budgets and the financial statements in stages 4–6 need Odoo Enterprise (Accounting app); Community's Invoicing app covers invoices, bills, payments and basic analysis.
-    </div>
+<strong style="color:var(--red);">Year-end → next period:</strong> There is no "close / open fiscal year" step. The year's result <strong>carries forward automatically</strong>; you close a period with <strong>lock dates</strong>, plus an optional entry allocating the year's earnings. Insights from tax reports and audits feed back into Setup (new tax rates, new journals) — accounting is a <strong>continuous cycle</strong>.<br/><br/><strong style="color:var(--red);">Edition note:</strong> asset depreciation, budgets and the financial statements in stages 4–6 need Odoo Enterprise (Accounting app); Community's Invoicing app covers invoices, bills, payments and basic analysis.
+  </div>
 </div></article><article class="topic" id="ch-05-accounting-module--accounting-module-detailed-flow-key-benefits"><header class="topic-hdr"><span class="topic-num">28</span><div><h3>Accounting Module: Detailed Flow &amp; Key Benefits</h3><p class="topic-sub">What each stage means in plain English — and why it matters</p></div></header><div class="topic-body">
 <div class="two-col">
 
@@ -1725,23 +1664,18 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Key Benefits</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">🏦</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Centralized Financial Management</div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">📊</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Real-time Reporting</div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">✅</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Accurate Reconciliation</div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">🎯</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Better Decision Making</div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">📋</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Compliance &amp; Transparency</div>
 </div>
 </div>
@@ -1749,7 +1683,6 @@ body.present.idle{cursor:none;}
 <div style="background:var(--dark);border-radius:10px;padding:20px;text-align:center;margin-top:auto;">
 <div style="font-size:13px;font-weight:800;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px;">Odoo Accounting</div>
 <div style="font-size:18px;font-weight:900;color:#fff;line-height:1.5;">Simplify Your Finance,<br/>Grow Your Business.</div>
-<div style="font-size:22px;margin-top:8px;">😊</div>
 </div>
 </div>
 </div>
@@ -1778,7 +1711,7 @@ body.present.idle{cursor:none;}
 <div style="background:#fff;border-radius:8px;padding:12px 16px;font-size:15px;color:#444;line-height:1.5;margin-top:auto;"><strong style="color:var(--dark);">Example:</strong> buy 10 → all 10 expensed at once; the period-end count credits back the <strong>6 unsold</strong> units.</div>
 </div>
 </div>
-<div class="alert red"><span class="alert-icon">⚙️</span><div><strong>In Odoo 20:</strong> the Anglo-Saxon setting comes with the country's chart of accounts (<strong>fiscal localization package</strong>) — on for the UK, Canada, Australia, New Zealand and the Generic chart used for the US; off for Germany, France, Spain and Italy. <strong>Periodic</strong> or <strong>Perpetual</strong> valuation is a separate, independent choice.</div></div>
+<div class="alert red"><div><strong>In Odoo 20:</strong> the Anglo-Saxon setting comes with the country's chart of accounts (<strong>fiscal localization package</strong>) — on for the UK, Canada, Australia, New Zealand and the Generic chart used for the US; off for Germany, France, Spain and Italy. <strong>Periodic</strong> or <strong>Perpetual</strong> valuation is a separate, independent choice.</div></div>
 </div></article><article class="topic" id="ch-06-accounting-standards--same-business-two-journal-entries"><header class="topic-hdr"><span class="topic-num">30</span><div><h3>Same Business, Two Journal Entries</h3><p class="topic-sub">Opening stock = 0 · buy 10 units at $100 — sell 4 units at $150 (cost of those 4 = $400). Where does the cost land?</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:7px;">
@@ -1800,14 +1733,14 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 </div>
-<div class="alert red"><span class="alert-icon">📌</span><div><strong>Same profit (600 − 400 = 200), different timing.</strong> <strong>Periodic</strong> in Odoo 20: Accounting → Review → Inventory Valuation → <strong>Generate Entry</strong> creates a draft Stock Closing entry to post (the Periodic Valuation setting can automate it: Manual / Daily / Monthly). <strong>Perpetual</strong>: entries are created when the bill / invoice is posted; a closing entry is still needed for goods received or delivered but not yet billed.</div></div>
+<div class="alert red"><div><strong>Same profit (600 − 400 = 200), different timing.</strong> <strong>Periodic</strong> in Odoo 20: Accounting → Review → Inventory Valuation → <strong>Generate Entry</strong> creates a draft Stock Closing entry to post (the Periodic Valuation setting can automate it: Manual / Daily / Monthly). <strong>Perpetual</strong>: entries are created when the bill / invoice is posted; a closing entry is still needed for goods received or delivered but not yet billed.</div></div>
 </div></article><article class="topic" id="ch-06-accounting-standards--us-gaap-vs-ifrs"><header class="topic-hdr"><span class="topic-num">31</span><div><h3>US GAAP vs IFRS</h3><p class="topic-sub">The two global reporting frameworks — the differences that matter in an ERP project</p></div></header><div class="topic-body">
 <table style="width:100%;border-collapse:collapse;font-size:17px;line-height:1.45;border:1px solid var(--border);">
 <thead><tr style="background:var(--red);color:#fff;text-align:left;"><th style="padding:13px 16px;">Topic</th><th style="padding:13px 16px;">US GAAP</th><th style="padding:13px 16px;">IFRS</th></tr></thead>
 <tbody><tr style="background:#fff;"><td style="padding:16px;font-weight:800;color:var(--dark);width:24%;">Who uses it</td><td style="padding:16px;color:#444;width:38%;">United States (set by the FASB)</td><td style="padding:16px;color:#444;width:38%;">Required in ~145 jurisdictions (set by the IASB)</td></tr><tr style="background:var(--off);"><td style="padding:16px;font-weight:800;color:var(--dark);">Inventory costing</td><td style="padding:16px;color:#444;">FIFO, Average or <strong>LIFO allowed</strong></td><td style="padding:16px;color:#444;">FIFO or Average — <strong>LIFO prohibited</strong></td></tr><tr style="background:#fff;"><td style="padding:16px;font-weight:800;color:var(--dark);">Inventory write-down</td><td style="padding:16px;color:#444;">Reversal <strong>not allowed</strong></td><td style="padding:16px;color:#444;">Reversal <strong>allowed</strong>, up to the original write-down</td></tr></tbody>
 </table>
-<div class="alert red" style="font-size:16px;"><span class="alert-icon">💡</span><div><strong>Why a consultant cares:</strong> these two inventory rows affect how you set up Odoo — which <strong>costing method</strong> is allowed and how <strong>stock write-downs</strong> are booked.</div></div>
-<div class="alert red" style="font-size:16px;"><span class="alert-icon">📚</span><div><strong>Everything else</strong> (development costs, asset revaluation, impairment, leases …) is mostly handled by the client's <strong>accountants</strong>, not by Odoo configuration.</div></div>
+<div class="alert red" style="font-size:16px;"><div><strong>Why a consultant cares:</strong> these two inventory rows affect how you set up Odoo — which <strong>costing method</strong> is allowed and how <strong>stock write-downs</strong> are booked.</div></div>
+<div class="alert red" style="font-size:16px;"><div><strong>Everything else</strong> (development costs, asset revaluation, impairment, leases …) is mostly handled by the client's <strong>accountants</strong>, not by Odoo configuration.</div></div>
 </div></article><article class="topic" id="ch-06-accounting-standards--which-standard-does-odoo-follow"><header class="topic-hdr"><span class="topic-num">32</span><div><h3>Which Standard Does Odoo Follow?</h3><p class="topic-sub">Odoo has no "IFRS" or "US GAAP" switch — the result comes from five configuration choices</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1.15;display:flex;flex-direction:column;gap:7px;">
@@ -1821,7 +1754,7 @@ body.present.idle{cursor:none;}
 <li>Decide valuation and cost method <strong>before the first stock move</strong> — changing the cost method later revalues stock; test on a copy first</li>
 <li>Test a full cycle: Buy → Receive → Bill → Sell → Invoice → check every entry</li>
 </ul></div>
-<div class="alert red"><span class="alert-icon">💼</span><div><strong>Trainer tip:</strong> Odoo is the tool; the framework is a <em>policy decision</em> made with the client's accountant. Record it in the accounting design during the Analysis phase.</div></div>
+<div class="alert red"><div><strong>Trainer tip:</strong> Odoo is the tool; the framework is a <em>policy decision</em> made with the client's accountant. Record it in the accounting design during the Analysis phase.</div></div>
 </div>
 </div>
 </div></article></section>
@@ -1874,7 +1807,7 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--dark);color:#fff;border-radius:8px;padding:10px 16px;text-align:center;margin-top:12px;font-size:13px;line-height:1.5;">
 <strong>Assets = Liabilities + Equity</strong> — always true in Odoo, which cannot post an unbalanced entry. Use the report to spot entries in the <strong>wrong account</strong> or with <strong>wrong amounts</strong> (e.g. an account given the wrong type).
-    </div>
+  </div>
 <div style="margin-top:8px;background:var(--off);padding:6px 10px;border-radius:6px;font-size:11px;">In Odoo: Accounting → Reporting → Balance Sheet</div>
 </div></article><article class="topic" id="ch-07-accounting-reports--trial-balance"><header class="topic-hdr"><span class="topic-num">35</span><div><h3>Trial Balance</h3><p class="topic-sub">Lists all accounts with their debit and credit totals<span class="edb">Enterprise</span></p></div></header><div class="topic-body">
 <div class="two-col">
@@ -1919,7 +1852,7 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--off);border-radius:8px;padding:10px 14px;font-size:12px;margin-top:12px;">
 <strong>Trainer Note:</strong> The General Ledger is the source of truth. Every other report (P&amp;L, BS, Trial Balance) is derived from it.
-    </div>
+  </div>
 </div></article><article class="topic" id="ch-07-accounting-reports--aged-receivable-report"><header class="topic-hdr"><span class="topic-num">37</span><div><h3>Aged Receivable Report</h3><p class="topic-sub">Who owes you money and how long they've owed it<span class="edb">Enterprise</span></p></div></header><div class="topic-body">
 <div class="card"><div class="card-title">Structure of the Report <span style="font-weight:600;text-transform:none;letter-spacing:0;font-size:11px;color:var(--muted);">— days overdue, counted from the invoice due date</span></div>
 <table class="matrix" style="width:100%;margin-top:4px;">
@@ -2043,7 +1976,7 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--off);border-radius:8px;padding:10px 14px;font-size:12px;margin-top:12px;">
 <strong>Key insight:</strong> A company can be profitable on paper but cash-poor if receivables are not collected. The Cash Flow report reveals this.
-    </div>
+  </div>
 <div style="margin-top:8px;background:var(--off);padding:6px 10px;border-radius:6px;font-size:11px;">In Odoo: Accounting → Reporting → Cash Flow Statement</div>
 </div></article><article class="topic" id="ch-07-accounting-reports--inventory-valuation-report"><header class="topic-hdr"><span class="topic-num">42</span><div><h3>Inventory Valuation Report</h3><p class="topic-sub">How much your stock is worth — and the accounting entry behind it<span class="edb">Enterprise</span></p></div></header><div class="topic-body">
 <div class="two-col">
@@ -2066,7 +1999,7 @@ body.present.idle{cursor:none;}
 </div>
 <div style="background:var(--off);border-radius:8px;padding:10px 14px;font-size:12px;margin-top:12px;">
 <strong>Community users:</strong> no accounting report — see stock quantity and value at <strong>Inventory → Reporting → Stock</strong>.
-    </div>
+  </div>
 </div></article><article class="topic" id="ch-07-accounting-reports--stock-value-where-to-see-it-in-odoo-20"><header class="topic-hdr"><span class="topic-num">43</span><div><h3>Stock Value — Where to See It in Odoo 20</h3><p class="topic-sub">Stock value lives in Inventory · the accounting entry depends on the valuation mode</p></div></header><div class="topic-body">
 <div class="two-col">
 <div class="card"><div class="card-title">Where to See Stock Value</div>
@@ -2112,24 +2045,23 @@ body.present.idle{cursor:none;}
 </div>
 </div></article></section>
 <section class="chapter" id="ch-08-complete-workflow" data-chapter="8"><div class="banner"><div class="banner-kicker">Chapter 08</div><h2>Now: How Odoo Works</h2><p class="banner-sub">Complete Workflow — End to End</p><p class="banner-desc">You now know <strong>what Odoo is</strong>, <strong>where it runs</strong>, and <strong>how accounting works</strong>.<br/>
-      Next: understand how a full business transaction flows inside Odoo — from creating a product to getting paid.</p><ul class="banner-chips"><li>📦 3 Product Types</li><li>🔄 3 Workflows</li><li>📊 Stock + Documents</li></ul></div><article class="topic" id="ch-08-complete-workflow--how-odoo-works-product-types-routes"><header class="topic-hdr"><span class="topic-num">45</span><div><h3>How Odoo Works: Product Types &amp; Routes</h3><p class="topic-sub">In Odoo, everything starts with a Product — its type and setup decide the workflow</p></div></header><div class="topic-body">
+   Next: understand how a full business transaction flows inside Odoo — from creating a product to getting paid.</p><ul class="banner-chips"><li>3 Product Types</li><li>3 Workflows</li><li>Stock + Documents</li></ul></div><article class="topic" id="ch-08-complete-workflow--how-odoo-works-product-types-routes"><header class="topic-hdr"><span class="topic-num">45</span><div><h3>How Odoo Works: Product Types &amp; Routes</h3><p class="topic-sub">In Odoo, everything starts with a Product — its type and setup decide the workflow</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="display:flex;flex-direction:column;gap:12px;flex:1.1;">
 <div class="alert red">
-<span class="alert-icon">💡</span>
 <div><strong>Core principle:</strong> Every business transaction in Odoo starts with a product. Its <strong>Type</strong> (Goods / Service / Combo) and its setup — <strong>vendor</strong>, <strong>Bill of Materials</strong>, <strong>routes</strong> — decide which documents Odoo creates. Since Odoo 19, Buy and Manufacture are hidden on the product and apply automatically.</div>
 </div>
 <div style="display:flex;flex-direction:column;gap:9px;flex:1;">
 <div style="background:#fff;border-radius:9px;padding:13px 16px;border-left:4px solid var(--red);border:1px solid var(--border);border-left-width:4px;">
-<div style="font-size:13px;font-weight:800;color:var(--red);">🏭 Manufactured — "We Make"</div>
+<div style="font-size:13px;font-weight:800;color:var(--red);">Manufactured — "We Make"</div>
 <div style="font-size:11.5px;color:#555;margin-top:5px;line-height:1.55;">The product has a <strong>Bill of Materials</strong>, so the Manufacture route applies automatically. Odoo creates a <strong>Manufacturing Order</strong>. Example: furniture, food products.</div>
 </div>
 <div style="background:#fff;border-radius:9px;padding:13px 16px;border-left:4px solid var(--red);border:1px solid var(--border);border-left-width:4px;">
-<div style="font-size:13px;font-weight:800;color:var(--red);">🛒 Purchased — "We Buy"</div>
+<div style="font-size:13px;font-weight:800;color:var(--red);">Purchased — "We Buy"</div>
 <div style="font-size:11.5px;color:#555;margin-top:5px;line-height:1.55;">The product has a <strong>vendor</strong> (Purchase tab), so the Buy route applies automatically. Odoo creates a draft <strong>RFQ</strong>. Example: retail goods, spare parts.</div>
 </div>
 <div style="background:#fff;border-radius:9px;padding:13px 16px;border-left:4px solid var(--red);border:1px solid var(--border);border-left-width:4px;">
-<div style="font-size:13px;font-weight:800;color:var(--red);">🛠️ Service / Custom — "We Sell Service"</div>
+<div style="font-size:13px;font-weight:800;color:var(--red);">Service / Custom — "We Sell Service"</div>
 <div style="font-size:11.5px;color:#555;margin-top:5px;line-height:1.55;">No physical stock. Odoo creates a <strong>Task/Project</strong> only if <strong>Create on Order</strong> is set on the product. Example: consulting, training, IT support.</div>
 </div>
 </div>
@@ -2152,7 +2084,6 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;color:var(--muted);margin-top:2px;">Installing Accounting (Enterprise) replaces Invoicing (Community) — you never have both.</div>
 </div>
 <div class="alert green">
-<span class="alert-icon">📌</span>
 <div>By default a confirmed Sales Order <strong>ships from stock</strong>. Odoo creates an MO or RFQ only if the product has the <strong>Replenish on Order (MTO)</strong> route or a <strong>reordering rule</strong> fires.</div>
 </div>
 </div>
@@ -2201,7 +2132,6 @@ body.present.idle{cursor:none;}
 <div style="font-size:11.5px;color:var(--muted);">Buy and Manufacture are hidden on the product (since Odoo 19). Without MTO or a reordering rule, a sales order ships from stock.</div>
 </div>
 <div class="alert orange">
-<span class="alert-icon">⚠️</span>
 <div><strong>MTO and Dropship are off by default.</strong> Enable them in Purchase → Configuration → Settings → Logistics (Replenish on Order (MTO) · Dropshipping), then tick the route on the product's Inventory tab.</div>
 </div>
 </div>
@@ -2209,7 +2139,7 @@ body.present.idle{cursor:none;}
 </div></article><article class="topic" id="ch-08-complete-workflow--workflow-a-manufactured-product-we-make"><header class="topic-hdr"><span class="topic-num">47</span><div><h3>Workflow A — Manufactured Product (We Make)</h3><p class="topic-sub">Product has a Bill of Materials · an MO is created on SO confirmation only with MTO (or by a reordering rule)</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:0;">
-<div class="wf-hdr blue">🏭 Steps 1–5</div>
+<div class="wf-hdr blue">Steps 1–5</div>
 <div class="flow">
 <div class="step blue"><div class="step-num">1</div><div class="step-content"><div class="step-name">Sales Order</div><div class="step-note">Customer orders a product you manufacture</div></div><span class="step-badge">Sales</span></div>
 <div class="step-arrow">↓</div>
@@ -2224,7 +2154,7 @@ body.present.idle{cursor:none;}
 </div>
 <div class="divider-v"></div>
 <div style="flex:1;display:flex;flex-direction:column;gap:9px;">
-<div class="wf-hdr blue">🏭 Steps 6–9</div>
+<div class="wf-hdr blue">Steps 6–9</div>
 <div class="flow" style="flex:initial;">
 <div class="step blue"><div class="step-num">6</div><div class="step-content"><div class="step-name">Mark as Done</div><div class="step-note">Components are consumed; finished product enters stock</div></div><span class="step-badge">Manufacturing</span></div>
 <div class="step-arrow">↓</div>
@@ -2235,7 +2165,6 @@ body.present.idle{cursor:none;}
 <div class="step blue"><div class="step-num">9</div><div class="step-content"><div class="step-name">Register Payment</div><div class="step-note">Record the customer payment on the invoice</div></div><span class="step-badge">Accounting</span></div>
 </div>
 <div class="alert blue">
-<span class="alert-icon">💡</span>
 <div><strong>Rule to remember:</strong> Each step needs a user action — Confirm SO → Produce / <strong>Mark as Done</strong> on MO → <strong>Validate</strong> delivery → Confirm invoice → Register Payment.</div>
 </div>
 </div>
@@ -2243,7 +2172,7 @@ body.present.idle{cursor:none;}
 </div></article><article class="topic" id="ch-08-complete-workflow--workflow-b-purchased-product-we-buy"><header class="topic-hdr"><span class="topic-num">48</span><div><h3>Workflow B — Purchased Product (We Buy)</h3><p class="topic-sub">Product has a vendor · a draft RFQ is created only with MTO (or by a reordering rule)</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:0;">
-<div class="wf-hdr red">🛒 Steps 1–5</div>
+<div class="wf-hdr red">Steps 1–5</div>
 <div class="flow">
 <div class="step red"><div class="step-num">1</div><div class="step-content"><div class="step-name">Sales Order</div><div class="step-note">Customer orders a product that you buy from a vendor</div></div><span class="step-badge">Sales</span></div>
 <div class="step-arrow">↓</div>
@@ -2258,7 +2187,7 @@ body.present.idle{cursor:none;}
 </div>
 <div class="divider-v"></div>
 <div style="flex:1;display:flex;flex-direction:column;gap:9px;">
-<div class="wf-hdr red">🛒 Steps 6–9</div>
+<div class="wf-hdr red">Steps 6–9</div>
 <div class="flow" style="flex:initial;">
 <div class="step red"><div class="step-num">6</div><div class="step-content"><div class="step-name">Vendor Bill</div><div class="step-note">Create the bill from the PO, confirm it and pay the vendor</div></div><span class="step-badge">Accounting</span></div>
 <div class="step-arrow">↓</div>
@@ -2269,7 +2198,6 @@ body.present.idle{cursor:none;}
 <div class="step red"><div class="step-num">9</div><div class="step-content"><div class="step-name">Register Payment</div><div class="step-note">Customer pays — transaction complete</div></div><span class="step-badge">Accounting</span></div>
 </div>
 <div class="alert red">
-<span class="alert-icon">💡</span>
 <div><strong>Key difference vs Manufactured:</strong> Instead of a Manufacturing Order, Odoo creates a <strong>draft RFQ</strong>, which becomes a <strong>Purchase Order</strong> when you confirm it.</div>
 </div>
 </div>
@@ -2277,7 +2205,7 @@ body.present.idle{cursor:none;}
 </div></article><article class="topic" id="ch-08-complete-workflow--workflow-c-service-custom-we-sell-service"><header class="topic-hdr"><span class="topic-num">49</span><div><h3>Workflow C — Service / Custom (We Sell Service)</h3><p class="topic-sub">Product type: Service · No physical stock — work tracked via Tasks &amp; Timesheets</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:0;">
-<div class="wf-hdr green">🛠️ Service Flow — All Steps</div>
+<div class="wf-hdr green">Service Flow — All Steps</div>
 <div class="flow">
 <div class="step green"><div class="step-num">1</div><div class="step-content"><div class="step-name">Sales Order</div><div class="step-note">Customer requests a service (consulting, support, repair)</div></div><span class="step-badge">Sales</span></div>
 <div class="step-arrow">↓</div>
@@ -2295,7 +2223,6 @@ body.present.idle{cursor:none;}
 <div class="divider-v"></div>
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div class="alert green">
-<span class="alert-icon">💡</span>
 <div><strong>Key difference:</strong> There is <strong>no stock movement</strong> in a service workflow. No warehouse, no delivery order. The "product" is the work your team performs.</div>
 </div>
 <div class="card">
@@ -2323,25 +2250,24 @@ body.present.idle{cursor:none;}
 </div></article><article class="topic" id="ch-08-complete-workflow--stock-flow-warehouse"><header class="topic-hdr"><span class="topic-num">50</span><div><h3>Stock Flow (Warehouse)</h3><p class="topic-sub">How goods move through the warehouse · and what each move changes</p></div></header><div class="topic-body">
 <div class="sec-label" style="margin-bottom:2px;">3. Stock Flow — Warehouse</div>
 <div class="stock-flow">
-<div class="sf-node"><div class="sf-icon">🏭</div><div class="sf-name">Purchase / Manufacturing</div><div class="sf-sub">Goods in from vendor or production</div></div>
+<div class="sf-node"><div class="sf-name">Purchase / Manufacturing</div><div class="sf-sub">Goods in from vendor or production</div></div>
 <div class="sf-arrow arr">→</div>
-<div class="sf-node"><div class="sf-icon">📥</div><div class="sf-name">Receipts</div><div class="sf-sub">Goods In — validate in Odoo</div></div>
+<div class="sf-node"><div class="sf-name">Receipts</div><div class="sf-sub">Goods In — validate in Odoo</div></div>
 <div class="sf-arrow arr">→</div>
-<div class="sf-node"><div class="sf-icon">🔀</div><div class="sf-name">Internal Transfers</div><div class="sf-sub">Move between warehouse locations</div></div>
+<div class="sf-node"><div class="sf-name">Internal Transfers</div><div class="sf-sub">Move between warehouse locations</div></div>
 <div class="sf-arrow arr">→</div>
-<div class="sf-node"><div class="sf-icon">📦</div><div class="sf-name">Stock On Hand</div><div class="sf-sub">Available stock ready to ship</div></div>
+<div class="sf-node"><div class="sf-name">Stock On Hand</div><div class="sf-sub">Available stock ready to ship</div></div>
 <div class="sf-arrow arr">→</div>
-<div class="sf-node last"><div class="sf-icon">🚚</div><div class="sf-name">Delivery Orders</div><div class="sf-sub">Goods Out — to customer</div></div>
+<div class="sf-node last"><div class="sf-name">Delivery Orders</div><div class="sf-sub">Goods Out — to customer</div></div>
 </div>
 <div class="sec-label" style="margin-top:6px;margin-bottom:6px;">4. What Each Stock Move Changes</div>
 <div style="display:flex;gap:10px;">
-<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">📥 Receipt validated</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Stock quantity and value <strong>increase</strong>.</div></div>
-<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">🔀 Internal transfer</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Between internal locations only the <strong>location</strong> changes — value stays the same.</div></div>
-<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">🚚 Delivery validated</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Stock quantity and value <strong>decrease</strong>.</div></div>
-<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">⚖️ Adjustment / production</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Moves to an <strong>Inventory Loss</strong> or <strong>Production</strong> location <strong>do change</strong> value.</div></div>
+<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">Receipt validated</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Stock quantity and value <strong>increase</strong>.</div></div>
+<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">Internal transfer</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Between internal locations only the <strong>location</strong> changes — value stays the same.</div></div>
+<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">Delivery validated</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Stock quantity and value <strong>decrease</strong>.</div></div>
+<div style="background:var(--off);border-radius:10px;padding:14px 16px;border-left:3px solid var(--red);flex:1;"><div style="font-size:13.5px;font-weight:800;color:var(--red);">Adjustment / production</div><div style="font-size:13px;color:#444;margin-top:5px;line-height:1.55;">Moves to an <strong>Inventory Loss</strong> or <strong>Production</strong> location <strong>do change</strong> value.</div></div>
 </div>
 <div class="alert red" style="margin-top:6px;">
-<span class="alert-icon">📌</span>
 <div><strong>Accounting follows the valuation mode.</strong> Journal entries are created when bills / invoices are posted (Perpetual) or suggested at closing (Periodic) — see <em>Inventory &amp; Accounting — How They Connect</em> in the Accounting section.</div>
 </div>
 </div></article><article class="topic" id="ch-08-complete-workflow--business-document-flow-end-to-end"><header class="topic-hdr"><span class="topic-num">51</span><div><h3>Business Document Flow — End to End</h3><p class="topic-sub">How a business transaction travels through Odoo from first contact to final payment</p></div></header><div class="topic-body">
@@ -2400,7 +2326,6 @@ body.present.idle{cursor:none;}
 <div style="font-size:13px;color:#444;line-height:1.5;"><strong>Bought</strong> → RFQ/PO + Receipt, <strong>Manufactured</strong> → MO — only with MTO or a reordering rule, else ships from stock. <strong>Service</strong> → Task if Create on Order is set. SO and Invoice are always there.</div>
 </div>
 <div class="alert red">
-<span class="alert-icon">💡</span>
 <div>This flow is the foundation of every Odoo implementation. Understand it deeply and every module will make sense.</div>
 </div>
 </div>
@@ -2449,7 +2374,7 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-09-crm" data-chapter="9"><div class="banner"><div class="banner-kicker">Chapter 09</div><h2>Odoo CRM Module</h2><p class="banner-sub">Workflow — Lead to Closed Deal</p><p class="banner-desc">Odoo CRM helps a business manage leads, opportunities and build strong customer relationships. It helps in tracking communication, activities and closing deals.</p><ul class="banner-chips"><li>🎯 Sales Process & Pipeline</li><li>⚡ Key Features</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-09-crm--odoo-crm-module-workflow-diagram"><header class="topic-hdr"><span class="topic-num">53</span><div><h3>Odoo CRM Module: Workflow Diagram</h3><p class="topic-sub">The 6-step sales process — and Odoo's real default pipeline stages</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-09-crm" data-chapter="9"><div class="banner"><div class="banner-kicker">Chapter 09</div><h2>Odoo CRM Module</h2><p class="banner-sub">Workflow — Lead to Closed Deal</p><p class="banner-desc">Odoo CRM helps a business manage leads, opportunities and build strong customer relationships. It helps in tracking communication, activities and closing deals.</p><ul class="banner-chips"><li>Sales Process & Pipeline</li><li>Key Features</li><li>Benefits</li></ul></div><article class="topic" id="ch-09-crm--odoo-crm-module-workflow-diagram"><header class="topic-hdr"><span class="topic-num">53</span><div><h3>Odoo CRM Module: Workflow Diagram</h3><p class="topic-sub">The 6-step sales process — and Odoo's real default pipeline stages</p></div></header><div class="topic-body">
 
 <div style="display:flex;align-items:stretch;gap:0;">
 
@@ -2524,8 +2449,8 @@ body.present.idle{cursor:none;}
 </div>
 
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:9px 16px;font-size:12.5px;color:#333;line-height:1.5;">
-<strong style="color:var(--red);">📌 Note:</strong> Enable Leads in CRM → Configuration → Settings → Leads. Without it, every new entry is an opportunity in the New stage.
-    </div>
+<strong style="color:var(--red);">Note:</strong> Enable Leads in CRM → Configuration → Settings → Leads. Without it, every new entry is an opportunity in the New stage.
+  </div>
 </div></article><article class="topic" id="ch-09-crm--crm-module-key-features-benefits"><header class="topic-hdr"><span class="topic-num">54</span><div><h3>CRM Module: Key Features &amp; Benefits</h3><p class="topic-sub">What CRM can do for your business — features and real-world benefits</p></div></header><div class="topic-body">
 <div class="two-col">
 
@@ -2560,29 +2485,25 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;align-items:flex-start;gap:12px;">
-<span style="font-size:22px;">🗃️</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Centralized Customer Data</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">All customer info, history and interactions in one place</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;align-items:flex-start;gap:12px;">
-<span style="font-size:22px;">🤝</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Improved Team Collaboration</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">Sales team shares leads, notes and activities seamlessly</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;align-items:flex-start;gap:12px;">
-<span style="font-size:22px;">📈</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Tracking &amp; Follow-up</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">Never miss a follow-up with automated reminders and activity logs</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;align-items:flex-start;gap:12px;">
-<span style="font-size:22px;">💰</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Increased Sales Conversion</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">Structured pipeline ensures no lead falls through the cracks</div></div>
 </div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:13px 16px;font-size:13px;color:#333;line-height:1.65;margin-top:auto;">
-<strong style="color:var(--red);">📌 Note:</strong> CRM is the first step towards building strong customer relationships and growing business. 😊
-        </div>
+<strong style="color:var(--red);">Note:</strong> CRM is the first step towards building strong customer relationships and growing business. 
+    </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-10-sales" data-chapter="10"><div class="banner"><div class="banner-kicker">Chapter 10</div><h2>Odoo Sales Module</h2><p class="banner-sub">Workflow — Quotation to Payment</p><p class="banner-desc">The Sales module helps a business manage the complete process from Quotation to Payment — all in one place.</p><ul class="banner-chips"><li>📋 5-Stage Workflow</li><li>⚡ Smart Features</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-10-sales--odoo-sales-module-workflow"><header class="topic-hdr"><span class="topic-num">55</span><div><h3>Odoo Sales Module: Workflow</h3><p class="topic-sub">5-stage process — from creating a Quotation to receiving Payment</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-10-sales" data-chapter="10"><div class="banner"><div class="banner-kicker">Chapter 10</div><h2>Odoo Sales Module</h2><p class="banner-sub">Workflow — Quotation to Payment</p><p class="banner-desc">The Sales module helps a business manage the complete process from Quotation to Payment — all in one place.</p><ul class="banner-chips"><li>5-Stage Workflow</li><li>Smart Features</li><li>Benefits</li></ul></div><article class="topic" id="ch-10-sales--odoo-sales-module-workflow"><header class="topic-hdr"><span class="topic-num">55</span><div><h3>Odoo Sales Module: Workflow</h3><p class="topic-sub">5-stage process — from creating a Quotation to receiving Payment</p></div></header><div class="topic-body">
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:10px;padding:14px 12px;display:flex;flex-direction:column;">
 <div style="font-size:13px;font-weight:900;color:var(--dark);background:var(--off);border-radius:6px;padding:7px 10px;text-align:center;margin-bottom:10px;">1. QUOTATION</div>
@@ -2639,12 +2560,12 @@ body.present.idle{cursor:none;}
 <div style="flex:1;text-align:center;color:var(--red);font-size:14px;font-weight:900;">Payment ✓</div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:11px 16px;font-size:13px;color:#333;line-height:1.6;">
-<strong style="color:var(--red);">💡 Key:</strong> SALES — From Quotation to Payment — Everything Handled Smoothly!
-    </div>
+<strong style="color:var(--red);">Key:</strong> SALES — From Quotation to Payment — Everything Handled Smoothly!
+  </div>
 </div></article><article class="topic" id="ch-10-sales--sales-module-smart-features-benefits"><header class="topic-hdr"><span class="topic-num">56</span><div><h3>Sales Module: Smart Features &amp; Benefits</h3><p class="topic-sub">What the Sales module can do and how it helps your business</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
-<div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">⭐ Smart Features in Sales Module</div>
+<div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Smart Features in Sales Module</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
 <div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:14px;display:flex;align-items:flex-start;gap:10px;">
 <span style="color:var(--red);font-size:18px;font-weight:900;flex-shrink:0;">✓</span>
@@ -2677,26 +2598,22 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits</div>
 <div style="display:flex;flex-direction:column;gap:9px;">
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">🔄</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">End-to-end Process in One System</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">From quotation to payment — no switching between tools</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">📡</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Real-time Tracking of Orders &amp; Deliveries</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">Always know the status of every order and shipment</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">🧾</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Accurate Invoicing &amp; Easy Payment Tracking</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">Invoices created from the SO with full payment history</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">😊</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Customer Satisfaction &amp; Business Growth</div><div style="font-size:12.5px;color:var(--muted);margin-top:2px;">Faster response times and professional quotations</div></div>
 </div>
 </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-11-purchase" data-chapter="11"><div class="banner"><div class="banner-kicker">Chapter 11</div><h2>Odoo Purchase Module</h2><p class="banner-sub">Workflow — RFQ to Payment</p><p class="banner-desc">The Purchase module helps businesses manage their procurement process efficiently — vendor communication, purchase orders, receipts, vendor bills and payments, all in one place.</p><ul class="banner-chips"><li>📋 9-Stage Workflow</li><li>⚡ Key Features</li><li>3-Way Match (Ent.)</li></ul></div><article class="topic" id="ch-11-purchase--odoo-purchase-module-workflow"><header class="topic-hdr"><span class="topic-num">57</span><div><h3>Odoo Purchase Module: Workflow</h3><p class="topic-sub">9-stage procurement process — RFQ to Payment &amp; Reporting</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-11-purchase" data-chapter="11"><div class="banner"><div class="banner-kicker">Chapter 11</div><h2>Odoo Purchase Module</h2><p class="banner-sub">Workflow — RFQ to Payment</p><p class="banner-desc">The Purchase module helps businesses manage their procurement process efficiently — vendor communication, purchase orders, receipts, vendor bills and payments, all in one place.</p><ul class="banner-chips"><li>9-Stage Workflow</li><li>Key Features</li><li>3-Way Match (Ent.)</li></ul></div><article class="topic" id="ch-11-purchase--odoo-purchase-module-workflow"><header class="topic-hdr"><span class="topic-num">57</span><div><h3>Odoo Purchase Module: Workflow</h3><p class="topic-sub">9-stage procurement process — RFQ to Payment &amp; Reporting</p></div></header><div class="topic-body">
 
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:12px 13px;">
@@ -2751,17 +2668,17 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 16px;font-size:13px;color:#333;">
-<strong style="color:var(--red);">📌 PO statuses:</strong> RFQ · RFQ Sent · To Approve (Purchase Order Approval setting) · Purchase Order · Cancelled — confirmed orders can be locked (Lock Confirmed Orders setting).
-    </div>
+<strong style="color:var(--red);">PO statuses:</strong> RFQ · RFQ Sent · To Approve (Purchase Order Approval setting) · Purchase Order · Cancelled — confirmed orders can be locked (Lock Confirmed Orders setting).
+  </div>
 </div></article><article class="topic" id="ch-11-purchase--purchase-module-about-key-features"><header class="topic-hdr"><span class="topic-num">58</span><div><h3>Purchase Module: About &amp; Key Features</h3><p class="topic-sub">What the Purchase module does and its core capabilities</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">About Purchase Module</div>
 <div style="background:var(--off);border-radius:10px;padding:18px 20px;border-left:4px solid var(--red);">
 <div style="font-size:15px;color:#333;line-height:1.8;">
-            The Purchase module in Odoo helps businesses <strong style="color:var(--dark);">manage their procurement process efficiently.</strong><br/><br/>
-            It streamlines <strong style="color:var(--red);">vendor communication</strong>, <strong style="color:var(--red);">purchase orders</strong>, <strong style="color:var(--red);">receipts</strong>, <strong style="color:var(--red);">vendor bills</strong> and <strong style="color:var(--red);">payments</strong> — all in one place.
-          </div>
+      The Purchase module in Odoo helps businesses <strong style="color:var(--dark);">manage their procurement process efficiently.</strong><br/><br/>
+      It streamlines <strong style="color:var(--red);">vendor communication</strong>, <strong style="color:var(--red);">purchase orders</strong>, <strong style="color:var(--red);">receipts</strong>, <strong style="color:var(--red);">vendor bills</strong> and <strong style="color:var(--red);">payments</strong> — all in one place.
+     </div>
 </div>
 <div style="background:var(--dark);border-radius:10px;padding:16px 20px;">
 <div style="font-size:13px;font-weight:800;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;">3-Way Matching (Enterprise · Purchase Settings)</div>
@@ -2809,31 +2726,31 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-12-inventory" data-chapter="12"><div class="banner"><div class="banner-kicker">Chapter 12</div><h2>Odoo Inventory Module</h2><p class="banner-sub">Workflow — Product Setup to Reporting</p><p class="banner-desc">To manage product storage, tracking and movement efficiently — receipts, deliveries, internal transfers and replenishment, all in one place.</p><ul class="banner-chips"><li>📦 9-Node Workflow</li><li>⚡ Main Features</li><li>📋 Key Points</li></ul></div><article class="topic" id="ch-12-inventory--odoo-inventory-module-workflow-diagram"><header class="topic-hdr"><span class="topic-num">59</span><div><h3>Odoo Inventory Module: Workflow Diagram</h3><p class="topic-sub">9-node flow — from Product Setup through to Reporting</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-12-inventory" data-chapter="12"><div class="banner"><div class="banner-kicker">Chapter 12</div><h2>Odoo Inventory Module</h2><p class="banner-sub">Workflow — Product Setup to Reporting</p><p class="banner-desc">To manage product storage, tracking and movement efficiently — receipts, deliveries, internal transfers and replenishment, all in one place.</p><ul class="banner-chips"><li>9-Node Workflow</li><li>Main Features</li><li>Key Points</li></ul></div><article class="topic" id="ch-12-inventory--odoo-inventory-module-workflow-diagram"><header class="topic-hdr"><span class="topic-num">59</span><div><h3>Odoo Inventory Module: Workflow Diagram</h3><p class="topic-sub">9-node flow — from Product Setup through to Reporting</p></div></header><div class="topic-body">
 
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">📦 Product Setup</div>
+<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">Product Setup</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Create Product · Type Goods + Track Inventory · Unit of Measure</div>
 </div>
 <div class="arr" style="display:flex;align-items:center;padding:0 5px;font-size:20px;color:var(--red);font-weight:900;flex-shrink:0;">→</div>
 <div style="flex:1;background:#fff;border:2px solid var(--red);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">📋 Physical Inventory</div>
+<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">Physical Inventory</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Operations → Physical Inventory · Enter Counted Quantity · Apply</div>
 </div>
 <div class="arr" style="display:flex;align-items:center;padding:0 5px;font-size:20px;color:var(--red);font-weight:900;flex-shrink:0;">→</div>
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">⬇ Receipts</div>
+<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">Receipts</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Confirm PO · Receipt created · Validate · Stock Updated</div>
 </div>
 <div class="arr" style="display:flex;align-items:center;padding:0 5px;font-size:20px;color:var(--red);font-weight:900;flex-shrink:0;">→</div>
 <div style="flex:1;background:#fff;border:2px solid var(--red);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">🔄 Internal Operations</div>
+<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">Internal Operations</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Transfers between locations · Stock moves created for every operation</div>
 </div>
 <div class="arr" style="display:flex;align-items:center;padding:0 5px;font-size:20px;color:var(--red);font-weight:900;flex-shrink:0;">→</div>
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:10px 11px;position:relative;">
-<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">🔁 Replenishment</div>
+<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">Replenishment</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Min/Max rules on <strong>forecasted</strong> stock · Operations → Replenishment</div>
 <div style="position:absolute;bottom:-18px;right:16px;font-size:17px;color:var(--red);font-weight:900;">↓</div>
 </div>
@@ -2841,28 +2758,28 @@ body.present.idle{cursor:none;}
 
 <div style="display:flex;align-items:stretch;gap:0;margin-top:4px;">
 <div style="flex:1;background:var(--off);border:2px solid var(--red);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">📊 Reporting</div>
+<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">Reporting</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Inventory Valuation · Stock On Hand · Moves History · Product Forecast</div>
 </div>
 <div style="display:flex;align-items:center;padding:0 5px;font-size:20px;color:var(--red);font-weight:900;flex-shrink:0;">←</div>
 <div style="flex:1;background:var(--off);border:2px solid var(--dark);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">👤 Customer</div>
+<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">Customer</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Receives Products</div>
 </div>
 <div style="display:flex;align-items:center;padding:0 5px;font-size:20px;color:var(--red);font-weight:900;flex-shrink:0;">←</div>
 <div style="flex:1;background:var(--off);border:2px solid var(--red);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">✅ Delivery Orders</div>
+<div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--red);">Delivery Orders</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Created from Sales Order · Validate (1 step by default; Pick · Pack with Multi-Step Routes)</div>
 </div>
 <div style="display:flex;align-items:center;padding:0 5px;font-size:20px;color:var(--red);font-weight:900;flex-shrink:0;">←</div>
 <div style="flex:1;background:var(--off);border:2px solid var(--dark);border-radius:9px;padding:10px 11px;">
-<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">🧾 Sales Order</div>
+<div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">Sales Order</div>
 <div style="font-size:11.5px;color:#444;line-height:1.5;">Confirm Order · Delivery Order created automatically</div>
 </div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 16px;font-size:13px;color:#333;">
-<strong style="color:var(--red);">📌 Key:</strong> All operations create <strong>Stock Moves</strong> in the background — real-time tracking ensures accurate stock availability at all times.
-    </div>
+<strong style="color:var(--red);">Key:</strong> All operations create <strong>Stock Moves</strong> in the background — real-time tracking ensures accurate stock availability at all times.
+  </div>
 </div></article><article class="topic" id="ch-12-inventory--inventory-module-key-points-main-features"><header class="topic-hdr"><span class="topic-num">60</span><div><h3>Inventory Module: Key Points &amp; Main Features</h3><p class="topic-sub">What to remember and what the module can do</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
@@ -2891,30 +2808,25 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Main Features</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 18px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">🏭</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Multi-warehouse Management<span style="font-size:12px;font-weight:600;color:var(--muted);"> · enable in Settings</span></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 18px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">📡</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Real-time Stock (On Hand &amp; Forecasted)</div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 18px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">🔢</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Lot / Serial Number Tracking<span style="font-size:12px;font-weight:600;color:var(--muted);"> · enable in Settings</span></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 18px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">💰</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Valuation Methods — FIFO, AVCO, Standard</div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 18px;display:flex;gap:12px;align-items:center;">
-<span style="font-size:22px;">🔗</span>
 <div style="font-size:14px;font-weight:800;color:var(--dark);">Integration with Other Modules</div>
 </div>
 </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-13-manufacturing" data-chapter="13"><div class="banner"><div class="banner-kicker">Chapter 13</div><h2>Odoo Manufacturing Module</h2><p class="banner-sub">Workflow — Product Setup to Finished Product</p><p class="banner-desc">End-to-end manufacturing management — from Bills of Materials and operations to manufacturing orders, quality checks and finished goods.</p><ul class="banner-chips"><li>⚙️ 10-Stage Workflow</li><li>📋 Key Points</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-13-manufacturing--odoo-manufacturing-module-workflow"><header class="topic-hdr"><span class="topic-num">61</span><div><h3>Odoo Manufacturing Module: Workflow</h3><p class="topic-sub">10-stage process — Product Setup → BoM → Operations → Demand → MO → Confirm → Consume → Produce → QC → Finished</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-13-manufacturing" data-chapter="13"><div class="banner"><div class="banner-kicker">Chapter 13</div><h2>Odoo Manufacturing Module</h2><p class="banner-sub">Workflow — Product Setup to Finished Product</p><p class="banner-desc">End-to-end manufacturing management — from Bills of Materials and operations to manufacturing orders, quality checks and finished goods.</p><ul class="banner-chips"><li>10-Stage Workflow</li><li>Key Points</li><li>Benefits</li></ul></div><article class="topic" id="ch-13-manufacturing--odoo-manufacturing-module-workflow"><header class="topic-hdr"><span class="topic-num">61</span><div><h3>Odoo Manufacturing Module: Workflow</h3><p class="topic-sub">10-stage process — Product Setup → BoM → Operations → Demand → MO → Confirm → Consume → Produce → QC → Finished</p></div></header><div class="topic-body">
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:10px 11px;">
 <div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:5px;padding-bottom:4px;border-bottom:2px solid var(--dark);">1. Product Setup</div>
@@ -2969,8 +2881,8 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 16px;font-size:13px;color:#333;">
-<strong style="color:var(--red);">📌 Key:</strong> BoM = <strong>what</strong> · Operations = <strong>how</strong> · MO statuses: Draft · Confirmed · In Progress · To Close · Done · Cancelled
-    </div>
+<strong style="color:var(--red);">Key:</strong> BoM = <strong>what</strong> · Operations = <strong>how</strong> · MO statuses: Draft · Confirmed · In Progress · To Close · Done · Cancelled
+  </div>
 </div></article><article class="topic" id="ch-13-manufacturing--manufacturing-module-key-points-benefits"><header class="topic-hdr"><span class="topic-num">62</span><div><h3>Manufacturing Module: Key Points &amp; Benefits</h3><p class="topic-sub">What to remember and the value it brings to the business</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
@@ -2998,16 +2910,16 @@ body.present.idle{cursor:none;}
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits of Odoo Manufacturing</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🔄</span><div style="font-size:14px;font-weight:800;color:var(--dark);">End-to-end Manufacturing Management</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">📡</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Real-time Inventory &amp; Production Tracking</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">📅</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Planning &amp; Resource Utilization</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">✅</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Improved Product Quality <span style="font-size:12px;font-weight:600;color:var(--muted);">· Quality app (Ent.)</span></div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🔗</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Seamless Integration with Sales, Inventory, Purchase</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">End-to-end Manufacturing Management</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Real-time Inventory &amp; Production Tracking</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Planning &amp; Resource Utilization</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Improved Product Quality <span style="font-size:12px;font-weight:600;color:var(--muted);">· Quality app (Ent.)</span></div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Seamless Integration with Sales, Inventory, Purchase</div></div>
 </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-14-project" data-chapter="14"><div class="banner"><div class="banner-kicker">Chapter 14</div><h2>Odoo Project Module</h2><p class="banner-sub">Streamline, Plan &amp; Deliver Successfully</p><p class="banner-desc">Odoo Project helps businesses manage tasks, track progress, collaborate with teams and deliver projects on time — planning, execution, monitoring &amp; analysis all in one place.</p><ul class="banner-chips"><li>📁 7-Stage Workflow</li><li>📊 7 Task Views</li><li>✅ Key Benefits</li></ul></div><article class="topic" id="ch-14-project--odoo-project-module-workflow"><header class="topic-hdr"><span class="topic-num">63</span><div><h3>Odoo Project Module: Workflow</h3><p class="topic-sub">7-stage process — Create Project → Plan → Execute → Monitor → Review → Invoice → Close</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-14-project" data-chapter="14"><div class="banner"><div class="banner-kicker">Chapter 14</div><h2>Odoo Project Module</h2><p class="banner-sub">Streamline, Plan &amp; Deliver Successfully</p><p class="banner-desc">Odoo Project helps businesses manage tasks, track progress, collaborate with teams and deliver projects on time — planning, execution, monitoring &amp; analysis all in one place.</p><ul class="banner-chips"><li>7-Stage Workflow</li><li>7 Task Views</li><li>Key Benefits</li></ul></div><article class="topic" id="ch-14-project--odoo-project-module-workflow"><header class="topic-hdr"><span class="topic-num">63</span><div><h3>Odoo Project Module: Workflow</h3><p class="topic-sub">7-stage process — Create Project → Plan → Execute → Monitor → Review → Invoice → Close</p></div></header><div class="topic-body">
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 12px;">
 <div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">1. Create Project</div>
@@ -3061,8 +2973,8 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div style="flex:1;background:#fdf2f2;border-left:4px solid var(--red);border-radius:9px;padding:11px 14px;font-size:12.5px;color:#333;line-height:1.55;">
-<strong style="color:var(--red);">📌 Default task stages:</strong> To Do → In Progress → Done → Cancelled (editable per project).
-      </div>
+<strong style="color:var(--red);">Default task stages:</strong> To Do → In Progress → Done → Cancelled (editable per project).
+   </div>
 </div>
 </div></article><article class="topic" id="ch-14-project--project-module-key-features-benefits"><header class="topic-hdr"><span class="topic-num">64</span><div><h3>Project Module: Key Features &amp; Benefits</h3><p class="topic-sub">What Odoo Project can do and why it matters for your business</p></div></header><div class="topic-body">
 <div class="two-col">
@@ -3081,15 +2993,15 @@ body.present.idle{cursor:none;}
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Key Benefits</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">📌</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Organize Tasks &amp; Milestones Efficiently</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🤝</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Improve Team Collaboration</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">⏱️</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Track Time &amp; Project Progress in Real-time</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">📊</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Make Data-driven Decisions with Smart Reports</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🔗</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Seamless Integration with Other Odoo Apps</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Organize Tasks &amp; Milestones Efficiently</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Improve Team Collaboration</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Track Time &amp; Project Progress in Real-time</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Make Data-driven Decisions with Smart Reports</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Seamless Integration with Other Odoo Apps</div></div>
 </div>
 <div style="background:var(--dark);border-radius:9px;padding:14px 18px;text-align:center;margin-top:auto;">
 <div style="font-size:16px;font-weight:900;color:#fff;line-height:1.5;">With Odoo Project, every project stays on track —</div>
-<div style="font-size:16px;font-weight:900;color:var(--red);line-height:1.5;">from start to success! 🚀</div>
+<div style="font-size:16px;font-weight:900;color:var(--red);line-height:1.5;">from start to success! </div>
 </div>
 </div>
 </div>
@@ -3178,13 +3090,12 @@ body.present.idle{cursor:none;}
 </ul>
 </div>
 <div class="alert red">
-<span class="alert-icon">💡</span>
 <div><strong>Real scenario:</strong> A consulting company sells "Implementation Support" at $100/hr. SO is confirmed → task created → consultant logs 20 hours → salesperson clicks Create Invoice → $2,000 invoice.</div>
 </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-15-point-of-sale" data-chapter="15"><div class="banner"><div class="banner-kicker">Chapter 15</div><h2>Odoo POS Module</h2><p class="banner-sub">(Point of Sale) — Workflow</p><p class="banner-desc">Odoo POS helps businesses manage in-store sales efficiently. It keeps selling during <strong>short network outages</strong> once the session is open and syncs orders when back online — from opening a session to closing the day.</p><ul class="banner-chips"><li>🛒 6-Stage Workflow</li><li>📶 Works Through Outages</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-15-point-of-sale--odoo-pos-module-workflow"><header class="topic-hdr"><span class="topic-num">67</span><div><h3>Odoo POS Module: Workflow</h3><p class="topic-sub">6-stage process — from POS Configuration to Close Session (End of Day)</p></div></header><div class="topic-body topic-row">
+<section class="chapter" id="ch-15-point-of-sale" data-chapter="15"><div class="banner"><div class="banner-kicker">Chapter 15</div><h2>Odoo POS Module</h2><p class="banner-sub">(Point of Sale) — Workflow</p><p class="banner-desc">Odoo POS helps businesses manage in-store sales efficiently. It keeps selling during <strong>short network outages</strong> once the session is open and syncs orders when back online — from opening a session to closing the day.</p><ul class="banner-chips"><li>6-Stage Workflow</li><li>Works Through Outages</li><li>Benefits</li></ul></div><article class="topic" id="ch-15-point-of-sale--odoo-pos-module-workflow"><header class="topic-hdr"><span class="topic-num">67</span><div><h3>Odoo POS Module: Workflow</h3><p class="topic-sub">6-stage process — from POS Configuration to Close Session (End of Day)</p></div></header><div class="topic-body topic-row">
 
 <div style="flex:1.2;display:flex;flex-direction:column;gap:6px;">
 <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 14px;display:flex;gap:12px;align-items:flex-start;">
@@ -3212,12 +3123,12 @@ body.present.idle{cursor:none;}
 
 <div style="display:flex;gap:8px;align-items:stretch;">
 <div style="flex:1;background:var(--off);border:2px solid var(--dark);border-radius:9px;padding:12px 13px;">
-<div style="font-size:11px;font-weight:800;color:var(--dark);background:#e8e8e8;border-radius:5px;padding:4px 8px;margin-bottom:7px;text-align:center;">✅ PAID</div>
+<div style="font-size:11px;font-weight:800;color:var(--dark);background:#e8e8e8;border-radius:5px;padding:4px 8px;margin-bottom:7px;text-align:center;">PAID</div>
 <div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:5px;">5A. Order Completed</div>
 <div style="font-size:11.5px;color:#555;line-height:1.5;">Order saved · Stock Updated · Receipt Printed · Customer Gets Receipt</div>
 </div>
 <div style="flex:1;background:var(--off);border:2px solid var(--red);border-radius:9px;padding:12px 13px;">
-<div style="font-size:11px;font-weight:800;color:var(--red);background:#fdf2f2;border-radius:5px;padding:4px 8px;margin-bottom:7px;text-align:center;">⏸ PAY LATER / ON HOLD</div>
+<div style="font-size:11px;font-weight:800;color:var(--red);background:#fdf2f2;border-radius:5px;padding:4px 8px;margin-bottom:7px;text-align:center;">PAY LATER / ON HOLD</div>
 <div style="font-size:12px;font-weight:900;color:var(--red);margin-bottom:5px;">5B. Open or Pay Later</div>
 <div style="font-size:11.5px;color:#555;line-height:1.5;">Leave the order open and resume it later · or <strong>Customer Account</strong>: customer pays later</div>
 </div>
@@ -3228,8 +3139,8 @@ body.present.idle{cursor:none;}
 <div><div style="font-size:13px;font-weight:900;color:#fff;">Close POS Session (End of Day)</div><div style="font-size:11.5px;color:rgba(255,255,255,.75);line-height:1.5;margin-top:3px;">Validate Closing Balance · Count Cash · System Records Closing · Accounting Entries Posted · Sales Report · Session Closed</div></div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 14px;font-size:12.5px;color:#333;line-height:1.55;">
-<strong style="color:var(--red);">💡 Key:</strong> Configure POS → Cashier logs in → Products added to cart → Payment processed → Stock &amp; Accounting updated → Session closed end of day.
-      </div>
+<strong style="color:var(--red);">Key:</strong> Configure POS → Cashier logs in → Products added to cart → Payment processed → Stock &amp; Accounting updated → Session closed end of day.
+   </div>
 </div>
 </div></article><article class="topic" id="ch-15-point-of-sale--pos-module-key-features-benefits"><header class="topic-hdr"><span class="topic-num">68</span><div><h3>POS Module: Key Features &amp; Benefits</h3><p class="topic-sub">What Odoo POS can do and why it helps your business</p></div></header><div class="topic-body">
 <div class="two-col">
@@ -3263,30 +3174,25 @@ body.present.idle{cursor:none;}
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits of Odoo POS</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">🖥️</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Fast and User-friendly Interface</div><div style="font-size:12px;color:var(--muted);margin-top:2px;">Cashiers can process orders in seconds with minimal training</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">📶</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Resilient to Network Outages</div><div style="font-size:12px;color:var(--muted);margin-top:2px;">Open sessions keep selling; orders sync when back online (card terminals need a connection)</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">📦</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Sales &amp; Inventory Management</div><div style="font-size:12px;color:var(--muted);margin-top:2px;">Every sale automatically updates stock in real-time</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">😊</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Improves Customer Experience</div><div style="font-size:12px;color:var(--muted);margin-top:2px;">Loyalty programs, discounts and fast checkout</div></div>
 </div>
 <div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start;">
-<span style="font-size:22px;">📈</span>
 <div><div style="font-size:14px;font-weight:800;color:var(--dark);">Provides Accurate Reports</div><div style="font-size:12px;color:var(--muted);margin-top:2px;">Daily sales summaries, session reports and revenue tracking</div></div>
 </div>
 </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-16-employees" data-chapter="16"><div class="banner"><div class="banner-kicker">Chapter 16</div><h2>Odoo Employees Module</h2><p class="banner-sub">Workflow — Joining to Exit</p><p class="banner-desc">The Employees module helps manage the complete employee lifecycle from joining to exit — storing all employee-related information and connecting with Time Off, Attendance, Recruitment, and Payroll &amp; Appraisals (Enterprise).</p><ul class="banner-chips"><li>👤 9-Stage Workflow</li><li>📋 Key Points</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-16-employees--odoo-employees-module-workflow-diagram"><header class="topic-hdr"><span class="topic-num">69</span><div><h3>Odoo Employees Module: Workflow Diagram</h3><p class="topic-sub">9-stage employee lifecycle — Create Employee → Work Info → Personal Info → Contract → Documents (Ent.) → Time Off → Appraisals (Ent.) → Payroll (Ent.) → Offboarding</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-16-employees" data-chapter="16"><div class="banner"><div class="banner-kicker">Chapter 16</div><h2>Odoo Employees Module</h2><p class="banner-sub">Workflow — Joining to Exit</p><p class="banner-desc">The Employees module helps manage the complete employee lifecycle from joining to exit — storing all employee-related information and connecting with Time Off, Attendance, Recruitment, and Payroll &amp; Appraisals (Enterprise).</p><ul class="banner-chips"><li>9-Stage Workflow</li><li>Key Points</li><li>Benefits</li></ul></div><article class="topic" id="ch-16-employees--odoo-employees-module-workflow-diagram"><header class="topic-hdr"><span class="topic-num">69</span><div><h3>Odoo Employees Module: Workflow Diagram</h3><p class="topic-sub">9-stage employee lifecycle — Create Employee → Work Info → Personal Info → Contract → Documents (Ent.) → Time Off → Appraisals (Ent.) → Payroll (Ent.) → Offboarding</p></div></header><div class="topic-body">
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 12px;">
 <div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--dark);">1. Create Employee</div>
@@ -3337,8 +3243,8 @@ body.present.idle{cursor:none;}
 <div><div style="font-size:13px;font-weight:900;color:#fff;">Offboarding</div><div style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.5;margin-top:2px;">Resignation · Departure reason &amp; date · Archive Employee</div></div>
 </div>
 <div style="flex:2;background:#fdf2f2;border-left:4px solid var(--red);border-radius:9px;padding:12px 14px;font-size:12.5px;color:#333;line-height:1.55;">
-<strong style="color:var(--red);">📌 Overview:</strong> Complete lifecycle from joining to exit. Connects with <strong>Time Off, Attendance, Recruitment</strong> and <strong>Payroll, Appraisals</strong> (Enterprise).
-      </div>
+<strong style="color:var(--red);">Overview:</strong> Complete lifecycle from joining to exit. Connects with <strong>Time Off, Attendance, Recruitment</strong> and <strong>Payroll, Appraisals</strong> (Enterprise).
+   </div>
 </div>
 </div></article><article class="topic" id="ch-16-employees--employees-module-key-points-benefits"><header class="topic-hdr"><span class="topic-num">70</span><div><h3>Employees Module: Key Points &amp; Benefits</h3><p class="topic-sub">What to remember and the value it brings to HR management</p></div></header><div class="topic-body">
 <div class="two-col">
@@ -3356,15 +3262,15 @@ body.present.idle{cursor:none;}
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">⏱️</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Saves Time &amp; Reduces Manual Work</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🎯</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Improves Data Accuracy</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">👥</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Employee Management &amp; Experience</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">📈</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Supports Business Growth</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Saves Time &amp; Reduces Manual Work</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Improves Data Accuracy</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Employee Management &amp; Experience</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Supports Business Growth</div></div>
 </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-17-email-marketing" data-chapter="17"><div class="banner"><div class="banner-kicker">Chapter 17</div><h2>Odoo Email Marketing</h2><p class="banner-sub">Workflow — Contacts to Automation</p><p class="banner-desc">Odoo Email Marketing helps you create, send and track email campaigns to engage your audience and grow your business.</p><ul class="banner-chips"><li>📧 8-Stage Workflow</li><li>⚡ Key Features</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-17-email-marketing--odoo-email-marketing-workflow"><header class="topic-hdr"><span class="topic-num">71</span><div><h3>Odoo Email Marketing: Workflow</h3><p class="topic-sub">8-stage campaign cycle — Contacts → Mailing List → Template → Campaign → Send → Analytics → Follow Up → Automation</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-17-email-marketing" data-chapter="17"><div class="banner"><div class="banner-kicker">Chapter 17</div><h2>Odoo Email Marketing</h2><p class="banner-sub">Workflow — Contacts to Automation</p><p class="banner-desc">Odoo Email Marketing helps you create, send and track email campaigns to engage your audience and grow your business.</p><ul class="banner-chips"><li>8-Stage Workflow</li><li>Key Features</li><li>Benefits</li></ul></div><article class="topic" id="ch-17-email-marketing--odoo-email-marketing-workflow"><header class="topic-hdr"><span class="topic-num">71</span><div><h3>Odoo Email Marketing: Workflow</h3><p class="topic-sub">8-stage campaign cycle — Contacts → Mailing List → Template → Campaign → Send → Analytics → Follow Up → Automation</p></div></header><div class="topic-body">
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:10px 11px;">
 <div style="font-size:12px;font-weight:900;color:var(--dark);margin-bottom:5px;padding-bottom:4px;border-bottom:2px solid var(--dark);">1. Contacts</div>
@@ -3410,38 +3316,38 @@ body.present.idle{cursor:none;}
 <div style="flex:2;"></div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 16px;font-size:13px;color:#333;">
-<strong style="color:var(--red);">💡 Use Cases:</strong> Product Updates · Promotions &amp; Offers · Newsletters · Event Invitations · Re-engagement · (Abandoned-cart reminders come from eCommerce)
-    </div>
+<strong style="color:var(--red);">Use Cases:</strong> Product Updates · Promotions &amp; Offers · Newsletters · Event Invitations · Re-engagement · (Abandoned-cart reminders come from eCommerce)
+  </div>
 </div></article><article class="topic" id="ch-17-email-marketing--email-marketing-key-features-benefits"><header class="topic-hdr"><span class="topic-num">72</span><div><h3>Email Marketing: Key Features &amp; Benefits</h3><p class="topic-sub">What Odoo Email Marketing can do and the value it brings</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Key Features</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">📧 Easy Email Builder (Drag &amp; Drop)</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🧪 A/B Testing</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">📋 Mailing List &amp; Segmentation</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🔗 Link Tracking</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">👤 Email Personalization</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🤖 Automated Workflows (Marketing Automation — Enterprise)</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">📅 Campaign Scheduling</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🔌 Integration with CRM, Website, eCommerce</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">📊 Real-time Analytics</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Easy Email Builder (Drag &amp; Drop)</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">A/B Testing</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Mailing List &amp; Segmentation</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Link Tracking</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Email Personalization</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Automated Workflows (Marketing Automation — Enterprise)</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Campaign Scheduling</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Integration with CRM, Website, eCommerce</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Real-time Analytics</div>
 </div>
 </div>
 <div class="divider-v"></div>
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">💬</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Improve Customer Engagement</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🌟</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Increase Brand Awareness</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">💰</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Drive More Sales</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🤝</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Build Strong Customer Relationships</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">⚡</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Save Time with Automation</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Improve Customer Engagement</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Increase Brand Awareness</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Drive More Sales</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Build Strong Customer Relationships</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:13px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Save Time with Automation</div></div>
 </div>
 </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-18-odoo-studio" data-chapter="18"><div class="banner"><div class="banner-kicker">Chapter 18</div><h2>Odoo Studio</h2><p class="banner-sub">No-code / Low-code Customization Tool</p><p class="banner-desc">Odoo Studio is a no-code/low-code customization tool that allows users to customize Odoo modules, create custom fields, views, automations and much more — <strong>without writing code.</strong><br/><strong>Available in Odoo Enterprise only.</strong></p><ul class="banner-chips"><li>🎨 6-Stage Workflow</li><li>⚡ Key Features</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-18-odoo-studio--odoo-studio-workflow-features-benefits"><header class="topic-hdr"><span class="topic-num">73</span><div><h3>Odoo Studio: Workflow, Features &amp; Benefits</h3><p class="topic-sub">6-stage customization cycle with Yes/No test loop — no coding required<span class="edb">Enterprise</span></p></div></header><div class="topic-body topic-row">
+<section class="chapter" id="ch-18-odoo-studio" data-chapter="18"><div class="banner"><div class="banner-kicker">Chapter 18</div><h2>Odoo Studio</h2><p class="banner-sub">No-code / Low-code Customization Tool</p><p class="banner-desc">Odoo Studio is a no-code/low-code customization tool that allows users to customize Odoo modules, create custom fields, views, automations and much more — <strong>without writing code.</strong><br/><strong>Available in Odoo Enterprise only.</strong></p><ul class="banner-chips"><li>6-Stage Workflow</li><li>Key Features</li><li>Benefits</li></ul></div><article class="topic" id="ch-18-odoo-studio--odoo-studio-workflow-features-benefits"><header class="topic-hdr"><span class="topic-num">73</span><div><h3>Odoo Studio: Workflow, Features &amp; Benefits</h3><p class="topic-sub">6-stage customization cycle with Yes/No test loop — no coding required<span class="edb">Enterprise</span></p></div></header><div class="topic-body topic-row">
 
 <div style="flex:1.1;display:flex;flex-direction:column;gap:7px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Workflow Diagram</div>
@@ -3485,30 +3391,29 @@ body.present.idle{cursor:none;}
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Key Features</div>
 <div style="display:flex;flex-direction:column;gap:7px;">
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">🖱️ Easy drag-and-drop interface</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">🔧 Create custom fields and views</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">✏️ Modify existing modules</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">📦 Create new models</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">⚡ Automate actions and workflows</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">🔒 Security Rules, Filters, Groups</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">💻 No coding required</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">Easy drag-and-drop interface</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">Create custom fields and views</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">Modify existing modules</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">Create new models</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">Automate actions and workflows</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">Security Rules, Filters, Groups</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:6px 13px;font-size:13px;font-weight:700;color:var(--dark);">No coding required</div>
 </div>
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);margin-top:4px;">Benefits</div>
 <div style="display:flex;flex-direction:column;gap:7px;">
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><span style="font-size:18px;">⏱️</span><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Saves development time</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><span style="font-size:18px;">👤</span><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Easy to use for functional users</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><span style="font-size:18px;">🔄</span><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Real-time customization</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><span style="font-size:18px;">📉</span><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Reduces dependency on developers</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Saves development time</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Easy to use for functional users</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Real-time customization</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:7px 13px;display:flex;gap:10px;align-items:center;"><div style="font-size:13.5px;font-weight:800;color:var(--dark);">Reduces dependency on developers</div></div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 14px;font-size:12.5px;color:#333;line-height:1.55;margin-top:auto;">
-<strong style="color:var(--red);">💰 When quoting:</strong> On Odoo Online, installing Studio moves the subscription to the <strong>Custom plan</strong> — an extra cost to mention to the client.
-      </div>
+<strong style="color:var(--red);">When quoting:</strong> On Odoo Online, installing Studio moves the subscription to the <strong>Custom plan</strong> — an extra cost to mention to the client.
+   </div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-19-practice-database" data-chapter="19"><div class="banner"><div class="banner-kicker">Chapter 19</div><h2>Getting an Odoo 20 Practice Database</h2><p class="banner-sub">For Functional Trainees — From Zero to a Database You Can Practise On</p><p class="banner-desc">Start a free trial or use a company training database, load demo data and practise every workflow in this course — Step by Step 😊</p><ul class="banner-chips"><li>🧪 7-Step Setup</li><li>☁️ Online · Odoo.sh · Self-hosted</li><li>🚀 Practise Safely</li></ul></div><article class="topic" id="ch-19-practice-database--3-ways-to-get-odoo-running"><header class="topic-hdr"><span class="topic-num">74</span><div><h3>3 Ways to Get Odoo Running</h3><p class="topic-sub">Cloud · Managed Platform · Self-Hosted — choose the right path for your project</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-19-practice-database" data-chapter="19"><div class="banner"><div class="banner-kicker">Chapter 19</div><h2>Getting an Odoo 20 Practice Database</h2><p class="banner-sub">For Functional Trainees — From Zero to a Database You Can Practise On</p><p class="banner-desc">Start a free trial or use a company training database, load demo data and practise every workflow in this course — Step by Step</p><ul class="banner-chips"><li>7-Step Setup</li><li>Online · Odoo.sh · Self-hosted</li><li>Practise Safely</li></ul></div><article class="topic" id="ch-19-practice-database--3-ways-to-get-odoo-running"><header class="topic-hdr"><span class="topic-num">74</span><div><h3>3 Ways to Get Odoo Running</h3><p class="topic-sub">Cloud · Managed Platform · Self-Hosted — choose the right path for your project</p></div></header><div class="topic-body">
 <div style="display:flex;gap:16px;height:100%;">
 <div style="flex:1;background:var(--off);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px;border-top:5px solid var(--red);">
-<div style="font-size:28px;text-align:center;">☁️</div>
 <div style="font-size:14px;font-weight:900;color:var(--red);text-align:center;">Option 1 — Odoo Online (SaaS)</div>
 <div style="font-size:12px;color:#444;line-height:1.6;">Hosted by Odoo. Nothing to install — sign up at <strong>odoo.com</strong> and start. Odoo manages updates, backups and servers. <strong>Enterprise only</strong>; custom and Apps Store modules can't be installed.</div>
 <div style="margin-top:auto;background:#fff;border-radius:8px;padding:10px 12px;">
@@ -3517,7 +3422,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div style="flex:1;background:var(--off);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px;border-top:5px solid var(--dark);">
-<div style="font-size:28px;text-align:center;">🖥️</div>
 <div style="font-size:14px;font-weight:900;color:var(--dark);text-align:center;">Option 2 — Odoo.sh</div>
 <div style="font-size:12px;color:#444;line-height:1.6;">Odoo's cloud platform with Git-based <strong>development, staging and production</strong> branches. Enterprise, custom modules allowed; Odoo manages the servers.</div>
 <div style="margin-top:auto;background:#fff;border-radius:8px;padding:10px 12px;">
@@ -3526,7 +3430,6 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div style="flex:1;background:var(--off);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px;border-top:5px solid var(--red);">
-<div style="font-size:28px;text-align:center;">🏠</div>
 <div style="font-size:14px;font-weight:900;color:var(--red);text-align:center;">Option 3 — Self-Hosted</div>
 <div style="font-size:12px;color:#444;line-height:1.6;">Install Odoo on your own server or local machine. Full control over data, configuration and infrastructure. Runs the <strong>Community</strong> (free) or <strong>Enterprise</strong> edition.</div>
 <div style="margin-top:auto;background:#fff;border-radius:8px;padding:10px 12px;">
@@ -3579,11 +3482,10 @@ body.present.idle{cursor:none;}
 </div>
 </div>
 <div class="alert red" style="margin-top:8px;">
-<span class="alert-icon">📌</span>
 <div><strong>Note for Functional Consultants:</strong> Self-hosted installation (Python 3.12–3.14, PostgreSQL 16+) is done by developers/admins — functional consultants usually work on an existing instance.</div>
 </div>
 </div></article></section>
-<section class="chapter" id="ch-20-settings" data-chapter="20"><div class="banner"><div class="banner-kicker">Chapter 20</div><h2>Odoo Settings Module</h2><p class="banner-sub">The Control Center of Odoo</p><p class="banner-desc">Settings is where you set up company details, manage users and access rights, configure email and languages, and turn on app features. Apps themselves are installed from the <strong>Apps</strong> menu.</p><ul class="banner-chips"><li>⚙️ 9-Stage Workflow</li><li>📋 Key Features</li><li>✅ Benefits</li></ul></div><article class="topic" id="ch-20-settings--odoo-settings-module-workflow"><header class="topic-hdr"><span class="topic-num">76</span><div><h3>Odoo Settings Module: Workflow</h3><p class="topic-sub">9-stage configuration flow — from Access Settings to System Ready</p></div></header><div class="topic-body">
+<section class="chapter" id="ch-20-settings" data-chapter="20"><div class="banner"><div class="banner-kicker">Chapter 20</div><h2>Odoo Settings Module</h2><p class="banner-sub">The Control Center of Odoo</p><p class="banner-desc">Settings is where you set up company details, manage users and access rights, configure email and languages, and turn on app features. Apps themselves are installed from the <strong>Apps</strong> menu.</p><ul class="banner-chips"><li>9-Stage Workflow</li><li>Key Features</li><li>Benefits</li></ul></div><article class="topic" id="ch-20-settings--odoo-settings-module-workflow"><header class="topic-hdr"><span class="topic-num">76</span><div><h3>Odoo Settings Module: Workflow</h3><p class="topic-sub">9-stage configuration flow — from Access Settings to System Ready</p></div></header><div class="topic-body">
 
 <div style="display:flex;align-items:stretch;gap:0;">
 <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 12px;">
@@ -3636,38 +3538,38 @@ body.present.idle{cursor:none;}
 <div style="flex:0;"></div>
 </div>
 <div style="background:#fdf2f2;border-left:4px solid var(--red);border-radius:8px;padding:10px 16px;font-size:13px;color:#333;line-height:1.6;">
-<strong style="color:var(--red);">📌 In Short:</strong> Settings is the <strong>control center</strong> for configuration. Databases (create, duplicate, back up) are managed elsewhere: the database manager (/web/database/manager), the odoo.com portal or Odoo.sh.
-    </div>
+<strong style="color:var(--red);">In Short:</strong> Settings is the <strong>control center</strong> for configuration. Databases (create, duplicate, back up) are managed elsewhere: the database manager (/web/database/manager), the odoo.com portal or Odoo.sh.
+  </div>
 </div></article><article class="topic" id="ch-20-settings--settings-module-key-features-benefits"><header class="topic-hdr"><span class="topic-num">77</span><div><h3>Settings Module: Key Features &amp; Benefits</h3><p class="topic-sub">What the Settings module configures and the value it brings</p></div></header><div class="topic-body">
 <div class="two-col">
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Key Features</div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🏢 Company details &amp; configuration</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">📧 Email &amp; communication setup</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">👥 Users &amp; access groups</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🔧 Developer mode &amp; Technical menu</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🔒 Access rights &amp; security</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">⚡ Scheduled actions (Technical) · Automation Rules module</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">📱 App features on/off (install from Apps)</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🌐 Translations &amp; languages</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">⚙️ General system settings</div>
-<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">🏢 Multi-company</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Company details &amp; configuration</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Email &amp; communication setup</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Users &amp; access groups</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Developer mode &amp; Technical menu</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Access rights &amp; security</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Scheduled actions (Technical) · Automation Rules module</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">App features on/off (install from Apps)</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Translations &amp; languages</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">General system settings</div>
+<div style="background:var(--off);border-left:3px solid var(--red);border-radius:8px;padding:12px 13px;font-size:13px;font-weight:700;color:var(--dark);">Multi-company</div>
 </div>
 </div>
 <div class="divider-v"></div>
 <div style="flex:1;display:flex;flex-direction:column;gap:12px;">
 <div style="font-size:11px;font-weight:800;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;padding-left:10px;border-left:3px solid var(--red);">Benefits</div>
 <div style="display:flex;flex-direction:column;gap:8px;">
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🎯</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Centralized Configuration</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🔒</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Improves Security &amp; Access Control</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">🛠️</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Easy to Customize &amp; Manage System</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">⚡</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Automation &amp; Efficiency</div></div>
-<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><span style="font-size:22px;">📈</span><div style="font-size:14px;font-weight:800;color:var(--dark);">Scalable as per Business Needs</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Centralized Configuration</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Improves Security &amp; Access Control</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Easy to Customize &amp; Manage System</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Better Automation &amp; Efficiency</div></div>
+<div style="background:#fff;border:1px solid var(--border);border-radius:8px;padding:14px 16px;display:flex;gap:12px;align-items:center;"><div style="font-size:14px;font-weight:800;color:var(--dark);">Scalable as per Business Needs</div></div>
 </div>
 <div style="background:var(--dark);border-radius:9px;padding:14px 18px;text-align:center;margin-top:auto;">
 <div style="font-size:15px;font-weight:900;color:#fff;line-height:1.6;">Settings = The Control Center of Odoo.</div>
-<div style="font-size:14px;font-weight:700;color:var(--red);line-height:1.6;">Configure Once. Run Smoothly. 😊</div>
+<div style="font-size:14px;font-weight:700;color:var(--red);line-height:1.6;">Configure Once. Run Smoothly. </div>
 </div>
 </div>
 </div>
@@ -3824,7 +3726,7 @@ body.present.idle{cursor:none;}
 </div>
 </div></article></section>
 
-    <section class="closing"><div class="banner"><div class="banner-kicker">Complete</div><h2>Thank You! 😊</h2><p class="banner-sub">Odoo Complete Training — Finished</p><p class="banner-desc">You have covered <strong>Odoo Basics, Accounting (including Anglo-Saxon vs Continental, US GAAP vs IFRS), Core Workflow, and 13 Modules</strong> — Invoicing, Accounting, CRM, Sales, Purchase, Inventory, Manufacturing, Project, POS, Employees, Email Marketing, Studio (Enterprise) and Settings (configuration).</p><p class="banner-desc">Cybrosys Technologies — <span>Odoo Experts</span></p><ul class="banner-chips"><li>CRM</li><li>Sales</li><li>Purchase</li><li>Invoicing</li><li>Accounting (Ent.)</li><li>Inventory</li><li>POS</li><li>Manufacturing</li><li>Employees</li><li>Email Marketing</li><li>Project</li><li>Studio (Ent.)</li><li>Settings (configuration)</li></ul></div></section>
+    <section class="closing"><div class="banner"><div class="banner-kicker">Complete</div><h2>Thank You!</h2><p class="banner-sub">Odoo Complete Training — Finished</p><p class="banner-desc">You have covered <strong>Odoo Basics, Accounting (including Anglo-Saxon vs Continental, US GAAP vs IFRS), Core Workflow, and 13 Modules</strong> — Invoicing, Accounting, CRM, Sales, Purchase, Inventory, Manufacturing, Project, POS, Employees, Email Marketing, Studio (Enterprise) and Settings (configuration).</p><p class="banner-desc">Cybrosys Technologies — <span>Odoo Experts</span></p><ul class="banner-chips"><li>CRM</li><li>Sales</li><li>Purchase</li><li>Invoicing</li><li>Accounting (Ent.)</li><li>Inventory</li><li>POS</li><li>Manufacturing</li><li>Employees</li><li>Email Marketing</li><li>Project</li><li>Studio (Ent.)</li><li>Settings (configuration)</li></ul></div></section>
     <footer class="site-ftr"><span><strong>CYBROSYS TECHNOLOGIES</strong> · Odoo Complete Training Guide</span><span>Press <strong>P</strong> to present</span></footer>
   </div>
 </main>
