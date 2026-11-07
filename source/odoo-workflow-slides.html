@@ -976,72 +976,107 @@ body{font-family:'Red Hat Display',sans-serif;background:#fff;display:flex;align
     <div class="hdr-l"><div class="hdr-title">Odoo Terminology — Cheat Sheet</div><div class="hdr-sub">Every document and term you will encounter daily on real projects</div></div>
     <div class="logo"><img src="https://www.images.cybrosys.com/images/cybro-logo-color.png" alt="Cybrosys"></div>
   </div>
-  <div class="body pad">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;flex:1;">
-      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+  <div class="body pad" style="padding-top:14px;padding-bottom:12px;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:7px;flex:1;">
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Lead</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">An unqualified contact or enquiry in CRM. Not yet confirmed as a potential sale.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: CRM</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">An unqualified enquiry in CRM — not yet a confirmed sales chance. (Leads are switched on in CRM settings.)</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: CRM</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">Opportunity</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">A qualified lead with real potential for business. Moves through CRM pipeline stages.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: CRM</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">A qualified lead with real potential. Moves through the CRM pipeline stages.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: CRM</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Quotation</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Price proposal sent to a customer. Not yet confirmed. Draft state in Sales module.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Sales</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Price proposal sent to a customer, not yet confirmed. Same document as the Sales Order.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Sales</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">SO — Sales Order</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Confirmed quotation. Creates the delivery for goods; an MO or PO only with the MTO route or a reordering rule.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Sales</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">The confirmed quotation. Creates the delivery; an MO or PO only with the MTO route or a reordering rule.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Sales</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
-        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">RFQ — Request for Quotation</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Draft sent to a vendor asking for pricing. Not yet a confirmed purchase.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Purchase</div>
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Pricelist</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Special prices or discounts for certain customers, quantities or dates — applied automatically on quotations.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Sales</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
-        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">PO — Purchase Order</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Confirmed RFQ. Triggers a receipt in Inventory when goods arrive from vendor.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Purchase</div>
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">RFQ — Request for Quotation</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Draft purchase sent to one vendor to ask for a price. Not yet confirmed.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Purchase</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">PO — Purchase Order</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">The confirmed RFQ. Creates the receipt for the incoming goods.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Purchase</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">Receipt</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Incoming goods from a vendor. Validating it adds the stock.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Inventory</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Delivery</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Outgoing goods to a customer, created from the Sales Order. Validating it removes the stock.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Inventory</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">Warehouse / Location</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">A warehouse is a physical site; locations are the places inside it (shelves, bins) plus virtual ones like Vendors and Customers.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Inventory</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Lot / Serial Number</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Tracks a batch (lot) or a single unit (serial) from receipt to delivery. Enabled in Inventory settings.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Inventory</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">UoM — Unit of Measure</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Units, kg, hours, boxes… A product can be bought in one unit and sold in another (buy boxes, sell pieces).</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Inventory · Sales · Purchase</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">MO — Manufacturing Order</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Instruction to produce a product from components using a Bill of Materials (BoM).</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Manufacturing</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Order to produce a product from its components, using a Bill of Materials.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Manufacturing</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">BoM — Bill of Materials</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">The recipe — lists components and quantities needed to manufacture one unit of a product.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Manufacturing</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">The recipe: components and quantities needed to make one unit of a product.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Manufacturing</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
-        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Receipt</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Incoming shipment record. Created when goods arrive from a vendor. Updates stock on validate.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Inventory</div>
-      </div>
-      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
-        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">Delivery</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Outgoing shipment to customer. Created from a Sales Order. Reduces stock on validate.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Inventory</div>
-      </div>
-      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Invoice</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Created from the Sales Order — the product's invoicing policy (ordered or delivered quantities) decides what can be invoiced. Increases what the customer owes us.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Accounting / Invoicing</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Created from the Sales Order; the invoicing policy (ordered or delivered quantities) decides what can be invoiced.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Accounting / Invoicing</div>
       </div>
-      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
-        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">Vendor Bill</div>
-        <div style="font-size:12.5px;color:#444;line-height:1.45;">Bill received from a vendor for goods/services purchased. Created from the PO. Increases what we owe the vendor.</div>
-        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:2px;">Module: Accounting / Purchase</div>
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">Credit Note</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Cancels all or part of a posted invoice — for a refund, return or price correction. Created from the invoice.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Accounting / Invoicing</div>
       </div>
-      <div style="background:var(--red);border-radius:9px;padding:11px 14px;display:flex;flex-direction:column;gap:4px;">
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Vendor Bill</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">The vendor's bill for what we bought, usually created from the PO. Increases what we owe the vendor.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Accounting / Purchase</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--dark);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--dark);">Payment Terms</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">When the customer must pay (e.g. 30 days, or 50% now and 50% in 30 days). Sets the invoice due date.</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Accounting / Invoicing</div>
+      </div>
+      <div style="background:#fff;border:2px solid var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
+        <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--red);">Fiscal Position</div>
+        <div style="font-size:12px;color:#444;line-height:1.4;">Rules that swap taxes and accounts automatically for certain partners (e.g. export, inter-state, tax-exempt).</div>
+        <div style="font-size:11px;font-weight:700;color:var(--muted);margin-top:auto;">Module: Accounting</div>
+      </div>
+      <div style="background:var(--red);border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:3px;">
         <div style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:#fff;">Payment</div>
-        <div style="font-size:12.5px;color:rgba(255,255,255,.85);line-height:1.45;">Money received from a customer or paid to a vendor. Invoice shows <strong style="color:#fff;">In Payment</strong> after registering, <strong style="color:#fff;">Paid</strong> after bank reconciliation.</div>
-        <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,.6);margin-top:2px;">Module: Accounting</div>
+        <div style="font-size:12px;color:rgba(255,255,255,.85);line-height:1.4;">Money received or paid. The invoice shows <strong style="color:#fff;">In Payment</strong> after registering, <strong style="color:#fff;">Paid</strong> after bank reconciliation.</div>
+        <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,.6);margin-top:auto;">Module: Accounting</div>
       </div>
     </div>
   </div>
