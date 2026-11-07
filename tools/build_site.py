@@ -21,7 +21,7 @@ LOGO = "https://www.images.cybrosys.com/images/cybro-logo-color.png"
 # (id of the chapter's first slide, chapter title, short description).
 # A chapter runs until the next one starts.
 CHAPTERS = [
-    ("s3", "Odoo Fundamentals", "Version · Edition · Hosting · Lifecycle · Architecture"),
+    ("s3", "Odoo Fundamentals", "Version · Edition · Hosting · Lifecycle · Glossary"),
     ("sAB0", "Accounting Basics", "Assets · Liabilities · Debit & Credit"),
     ("sOA0", "Odoo Accounting", "CoA · Journals · Payments · Reconciliation"),
     ("s29", "Invoicing Module", "Invoice creation to payment"),
@@ -34,12 +34,12 @@ CHAPTERS = [
     ("s26", "Purchase", "RFQ to payment"),
     ("s42", "Inventory", "Warehouse · Stock movements"),
     ("s48", "Manufacturing", "BOM · MO · Production"),
-    ("s57", "Projects", "Tasks · Timesheets · Service flow"),
+    ("s57", "Project", "Tasks · Timesheets · Service flow"),
     ("s45", "Point of Sale", "Sessions · Orders · Close"),
     ("s51", "Employees", "Joining to exit"),
     ("s54", "Email Marketing", "Contacts to automation"),
     ("s66", "Odoo Studio", "No-code customization"),
-    ("s68", "Installation Guide", "Run Odoo on localhost"),
+    ("s68", "Practice Database", "Get a training database"),
     ("s71", "Settings", "The control center"),
     ("sRC0", "Real Client Scenarios", "Trading · Manufacturing · Service"),
     ("sIM0", "Implementation Mindset", "Think like a consultant"),
