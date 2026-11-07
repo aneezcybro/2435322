@@ -3745,11 +3745,21 @@ body.present.idle{cursor:none;}
     const el = slides[cur];
     const availW = innerWidth - 96, availH = innerHeight - 44 - 72;
     // Lay title slides out narrower so they read as a title card, not a page.
-    const w = el.classList.contains('topic') || el.id === 'overview' ? 1200 : 1000;
+    // Sparse slides would leave half the screen empty at full width, so try
+    // narrower layouts and keep the one that can be drawn largest without
+    // anything spilling sideways.
+    const wide = el.classList.contains('topic') || el.id === 'overview';
+    const widths = wide ? [1200, 1100, 1000, 920, 840, 760] : [1000];
+    let best = { s: 0, w: widths[0] };
     el.style.setProperty('--ps', 1);
-    el.style.setProperty('--pw', w + 'px');
-    const s = Math.min(availW / w, availH / el.offsetHeight, 2.2);
-    el.style.setProperty('--ps', s.toFixed(3));
+    for (const w of widths) {
+      el.style.setProperty('--pw', w + 'px');
+      if (w !== widths[0] && el.scrollWidth > el.clientWidth + 2) break;
+      const s = Math.min(availW / w, availH / el.offsetHeight, 2.4);
+      if (s > best.s + 0.01) best = { s, w };
+    }
+    el.style.setProperty('--pw', best.w + 'px');
+    el.style.setProperty('--ps', best.s.toFixed(3));
   }
   function show(n) {
     slides[cur].classList.remove('on');
