@@ -18,31 +18,31 @@ OUT = ROOT / "index.html"
 SLIDES_OUT = ROOT / "slides.html"
 LOGO = "https://www.images.cybrosys.com/images/cybro-logo-color.png"
 
-# (first slide number, chapter title, short description) — slide numbers are
-# 1-based positions in the deck. A chapter runs until the next one starts.
+# (id of the chapter's first slide, chapter title, short description).
+# A chapter runs until the next one starts.
 CHAPTERS = [
-    (3, "Odoo Fundamentals", "Version · Edition · Hosting · Lifecycle · Architecture"),
-    (13, "Accounting Basics", "Assets · Liabilities · Debit & Credit"),
-    (19, "Odoo Accounting", "CoA · Journals · Payments · Reconciliation"),
-    (26, "Invoicing Module", "Invoice creation to payment"),
-    (29, "Accounting Module", "Setup to compliance"),
-    (32, "Accounting Standards", "Anglo-Saxon · Continental · GAAP · IFRS"),
-    (37, "Accounting Reports", "12 essential reports"),
-    (50, "Complete Workflow", "Product types · Routes · Documents"),
-    (59, "CRM", "Lead to closed deal"),
-    (62, "Sales", "Quotation to payment"),
-    (65, "Purchase", "RFQ to payment"),
-    (68, "Inventory", "Warehouse · Stock movements"),
-    (71, "Manufacturing", "BOM · MO · Production"),
-    (74, "Projects", "Tasks · Timesheets · Service flow"),
-    (79, "Point of Sale", "Sessions · Orders · Close"),
-    (82, "Employees", "Joining to exit"),
-    (85, "Email Marketing", "Contacts to automation"),
-    (88, "Odoo Studio", "No-code customization"),
-    (90, "Installation Guide", "Run Odoo on localhost"),
-    (93, "Settings", "The control center"),
-    (96, "Real Client Scenarios", "Trading · Manufacturing · Service"),
-    (100, "Implementation Mindset", "Think like a consultant"),
+    ("s3", "Odoo Fundamentals", "Version · Edition · Hosting · Lifecycle · Architecture"),
+    ("sAB0", "Accounting Basics", "Assets · Liabilities · Debit & Credit"),
+    ("sOA0", "Odoo Accounting", "CoA · Journals · Payments · Reconciliation"),
+    ("s29", "Invoicing Module", "Invoice creation to payment"),
+    ("s32", "Accounting Module", "Setup to compliance"),
+    ("sAS0", "Accounting Standards", "Anglo-Saxon · Continental · GAAP · IFRS"),
+    ("sAR0", "Accounting Reports", "12 essential reports"),
+    ("s9", "Complete Workflow", "Product types · Routes · Documents"),
+    ("s20", "CRM", "Lead to closed deal"),
+    ("s23", "Sales", "Quotation to payment"),
+    ("s26", "Purchase", "RFQ to payment"),
+    ("s42", "Inventory", "Warehouse · Stock movements"),
+    ("s48", "Manufacturing", "BOM · MO · Production"),
+    ("s57", "Projects", "Tasks · Timesheets · Service flow"),
+    ("s45", "Point of Sale", "Sessions · Orders · Close"),
+    ("s51", "Employees", "Joining to exit"),
+    ("s54", "Email Marketing", "Contacts to automation"),
+    ("s66", "Odoo Studio", "No-code customization"),
+    ("s68", "Installation Guide", "Run Odoo on localhost"),
+    ("s71", "Settings", "The control center"),
+    ("sRC0", "Real Client Scenarios", "Trading · Manufacturing · Service"),
+    ("sIM0", "Implementation Mindset", "Think like a consultant"),
 ]
 
 
@@ -144,16 +144,18 @@ def main():
     deck_css = deck_css.split("/* nav */")[0] + deck_css.split("/* section divider slide */")[1]
 
     starts = {start: i for i, (start, *_) in enumerate(CHAPTERS)}
+    missing = set(starts) - {sl["id"] for sl in slides}
+    assert not missing, f"CHAPTERS refers to unknown slide ids: {missing}"
     chapters_html, nav_html = [], []
     current = None
     topic_no = 0
     for num, slide in enumerate(slides, 1):
         if num in (1, 2, len(slides)):
             continue  # hero, agenda and closing are rebuilt below
-        if num in starts:
+        if slide["id"] in starts:
             if current:
                 chapters_html.append(current)
-            idx = starts[num]
+            idx = starts[slide["id"]]
             _, name, desc = CHAPTERS[idx]
             cid = f"ch-{idx + 1:02d}-{slugify(name)}"
             current = {"id": cid, "idx": idx + 1, "name": name, "desc": desc, "parts": [], "topics": []}

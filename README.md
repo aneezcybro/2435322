@@ -22,4 +22,4 @@ pip install beautifulsoup4
 python3 tools/build_site.py
 ```
 
-This regenerates `index.html` and `slides.html`. Chapter names and the slides where each chapter starts are set in `CHAPTERS` at the top of `tools/build_site.py`. If you add or remove slides, update those start numbers.
+This regenerates `index.html` and `slides.html`. Chapter names and the id of the slide where each chapter starts are set in `CHAPTERS` at the top of `tools/build_site.py`.
