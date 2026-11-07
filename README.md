@@ -4,8 +4,8 @@ A scrollable, responsive website built from the *Odoo Complete Training* slide d
 
 | File | What it is |
 | --- | --- |
-| `index.html` | The website: 22 chapters, 80 topics, a sidebar table of contents, and layouts that work on phones |
-| `slides.html` | The original slide deck (use the arrow keys; press `F` for fullscreen), linked from the site's **Slides** button |
+| `index.html` | The website: 22 chapters, 83 topics, a presenter mode for showing it on a screen, a sidebar table of contents, and layouts that work on phones |
+| `slides.html` | The slide deck, 107 slides (use the arrow keys; press `F` for fullscreen), linked from the site's **Slides** button |
 | `source/odoo-workflow-slides.html` | The source deck that both pages are generated from |
 | `tools/build_site.py`, `tools/site_template.html` | The build script and the page layout |
 
