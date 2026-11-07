@@ -2301,7 +2301,7 @@ body{font-family:'Red Hat Display',sans-serif;background:#fff;display:flex;align
           <li><strong>Output Tax</strong> — Tax collected from customers on sales</li>
           <li><strong>Input Tax</strong> — Tax paid to vendors on purchases</li>
           <li><strong>Net Tax Payable</strong> = Output Tax − Input Tax</li>
-          <li>Breakdown by tax rate (e.g. India GST 5%, 18%, 40%)</li>
+          <li>Breakdown by tax rate — rates come from the country's localization (e.g. India GST 5% / 18% / 40%, UK VAT 20%, UAE VAT 5%)</li>
           <li>Taxes set per product or account; tax groups for CGST/SGST/IGST (India)</li>
           <li>Fiscal positions switch Intra-State (CGST+SGST) to Inter-State (IGST)</li>
         </ul>
@@ -2575,7 +2575,7 @@ body{font-family:'Red Hat Display',sans-serif;background:#fff;display:flex;align
         </div>
         <div class="alert orange">
           <span class="alert-icon">⚠️</span>
-          <div><strong>MTO is archived by default.</strong> Enable it in Inventory → Configuration → Settings → Replenish on Order (MTO), then tick it on the product's Inventory tab.</div>
+          <div><strong>MTO and Dropship are off by default.</strong> Enable them in Purchase → Configuration → Settings → Logistics (Replenish on Order (MTO) · Dropshipping), then tick the route on the product's Inventory tab.</div>
         </div>
       </div>
     </div>
@@ -3239,7 +3239,7 @@ body{font-family:'Red Hat Display',sans-serif;background:#fff;display:flex;align
       <div style="display:flex;align-items:center;padding:0 7px;font-size:22px;color:var(--red);font-weight:900;flex-shrink:0;">→</div>
       <div style="flex:1;background:#fff;border:2px solid var(--red);border-radius:9px;padding:12px 13px;">
         <div style="font-size:12.5px;font-weight:900;color:var(--red);margin-bottom:7px;padding-bottom:5px;border-bottom:2px solid var(--red);">2. Send RFQ to Vendor</div>
-        <div style="font-size:12px;color:#444;line-height:1.55;">Send it by email. To compare vendors, create separate or <strong>Alternative</strong> RFQs (Purchase Agreements setting).</div>
+        <div style="font-size:12px;color:#444;line-height:1.55;">Send it by email. To compare vendors, create separate or <strong>Alternative</strong> RFQs (Purchase Alternative setting).</div>
       </div>
       <div style="display:flex;align-items:center;padding:0 7px;font-size:22px;color:var(--red);font-weight:900;flex-shrink:0;">→</div>
       <div style="flex:1;background:#fff;border:2px solid var(--dark);border-radius:9px;padding:12px 13px;position:relative;">
